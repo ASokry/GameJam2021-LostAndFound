@@ -64,8 +64,11 @@ public class PlayerController : MonoBehaviour
             // If GameObject is touching the ground, use fly speed
             speed = flySpeed;
         }
+        // Move Position based on MoveInput
+        transform.position += new Vector3(moveInput,0,0) * Time.deltaTime * speed;
+
         // Add velocity speed to the direction of movement
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        //rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
     }
 
     void Flip()
