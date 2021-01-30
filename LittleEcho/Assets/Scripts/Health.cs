@@ -5,13 +5,23 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
 
-    [SerializeField] private int health = 100;
+    [SerializeField] private int health;
+    private int maxHealth = 100;
+
+    public HealthBar healthBar;
+
+    private void Start()
+    {
+        health = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+    }
 
     public void TakeDamage(int damage)
     {
         health -= damage;
+        healthBar.SetHealth(health);
 
-        if(health <=0)
+        if (health <=0)
         {
             // do something
         }
@@ -23,5 +33,7 @@ public class Health : MonoBehaviour
 
         if (this.health >= 100)
             this.health = 100;
+
+        healthBar.SetHealth(health);
     }
 }
