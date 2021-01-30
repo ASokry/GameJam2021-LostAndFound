@@ -5449,7 +5449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18fd09cf74c65f49b68a6e0887dcd12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnCooldown: 1
+  spawnCooldown: 1000
   flapVolume: 2
   screamVolume: 8
   prefab: {fileID: 7967318258726834216, guid: 99338c329be40514797ff4e4026d83b4, type: 3}

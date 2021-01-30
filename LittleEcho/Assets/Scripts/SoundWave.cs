@@ -8,14 +8,18 @@ public class SoundWave : MonoBehaviour
     public const float ECHO_MULT = 0.4F;
     public const float MINIMUM_DURATION = 0.4F;
 
-    [SerializeField]
     private int numberOfPoints = 100; // How many points does this sound wave consist of initially
 
     [SerializeField]
     private float duration = 4;
-    private float spawnTime;
+    private float timeAlive = 0;
 
     private int iteration;
+
+    [SerializeField]
+    private AudioClip normalSound;
+    [SerializeField]
+    private AudioClip echoSound;
 
     [SerializeField]
     private SoundWave wavePrefab;
@@ -29,24 +33,33 @@ public class SoundWave : MonoBehaviour
     [SerializeField]
     private AudioSource source;
 
+    private bool initialized = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        Init(duration, 0);
+        if (!initialized)
+            Init(duration, 0);
+        source.Play();
 
         points = new List<SoundPoint>();
-        spawnTime = Time.time;
         SpawnPoints();
     }
 
     private void Init(float duration, int iteration)
     {
+        initialized = true;
+
+        Debug.Log(iteration);
+
         this.duration = duration;
         numberOfPoints = PointsPerDuration(duration);
 
         this.iteration = iteration;
         source.volume *= AudioVolumePerIteration(iteration);
         source.pitch *= AudioPitchPerIteration(iteration);
+
+        source.clip = iteration == 0 ? normalSound : echoSound;
     }
 
     public void Init(float duration)
@@ -59,12 +72,14 @@ public class SoundWave : MonoBehaviour
         for (int i = 0; i < numberOfPoints; i++)
         {
             SoundPoint point = new SoundPoint(this, transform.position, Quaternion.Euler(0, 0, i * (360F / numberOfPoints)), false);
-            points.Add(point);
+
+            if (!point.CheckForward(0.1F)) // Too close to a wall?
+                points.Add(point);
         }
 
         // Assign echo status to some points
         int numberOfEchos = EchosPerPoints(numberOfPoints);
-        int echoPoint = Random.Range(0, numberOfPoints);
+        int echoPoint = Random.Range(0, points.Count);
 
         HashSet<int> takenPoints = new HashSet<int>();
 
@@ -76,7 +91,7 @@ public class SoundWave : MonoBehaviour
             // Keep trying until we have a new point
             while (takenPoints.Contains(echoPoint))
             {
-                echoPoint = (echoPoint + Random.Range(1, numberOfPoints)) % numberOfPoints;
+                echoPoint = (echoPoint + Random.Range(1, points.Count)) % points.Count;
 
                 // Shouldn't happen
                 counter--;
@@ -94,8 +109,7 @@ public class SoundWave : MonoBehaviour
 
     public void SpawnEcho(SoundPoint pointIn)
     {
-        //if (duration * ECHO_MULT > MINIMUM_DURATION) // Echo cutoff
-            SpawnSoundWave(pointIn.position, duration * ECHO_MULT, iteration + 1);
+        SpawnSoundWave(pointIn.position, duration * ECHO_MULT, iteration + 1);
     }
 
     void SpawnSoundWave(Vector3 position, float durationIn, int iterationIn)
@@ -107,24 +121,41 @@ public class SoundWave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > spawnTime + duration)
+        if (timeAlive > duration)
         {
             Destroy(gameObject);
         }
         else
         {
+            float deltaTime = Time.deltaTime;
+
+            timeAlive += deltaTime;
+
             // Update points
             for (int i = 0; i < points.Count; i++)
             {
-                points[i].Tick(Time.deltaTime);
+                points[i].Tick(deltaTime);
             }
 
             // Draw edge
-            for (int i = 0; i < points.Count; i++)
+            if (points.Count > 1)
             {
-                Vector3 dir = 1F * (i < points.Count - 1 ? points[i].position - points[i + 1].position : points[i].position - points[0].position);
-                if (dir.magnitude < 0.5F || (!points[i].stopped && !(i < points.Count - 1 ? points[i + 1].stopped : points[0].stopped)))
-                    Debug.DrawRay(points[i].position, -dir, Color.red, Time.deltaTime);
+                for (int i = 0; i < points.Count; i++)
+                {
+                    Vector3 dir = -(i < points.Count - 1 ? points[i].position - points[i + 1].position : points[i].position - points[0].position);
+
+                    float arcLength = 2 * Mathf.PI * (timeAlive * WAVE_SPEED) / numberOfPoints;
+                    bool stopped = points[i].stopped || (i < points.Count - 1 ? points[i + 1].stopped : points[0].stopped);
+                    bool shortEnough = dir.magnitude <= arcLength + 0.1F || (stopped && dir.magnitude <= 2);
+
+                    Color color = iteration == 0 ? Color.yellow : iteration == 1 ? Color.red : iteration == 2 ? Color.magenta : Color.blue;
+
+                    RaycastHit2D hit = Physics2D.Raycast(points[i].position, dir, dir.magnitude, checkMask);
+                    if (shortEnough && hit.collider == null)
+                    {
+                        Debug.DrawRay(points[i].position, dir, color, deltaTime);
+                    }
+                }
             }
         }
     }
@@ -146,6 +177,6 @@ public class SoundWave : MonoBehaviour
 
     private static float AudioPitchPerIteration(int iterationIn)
     {
-        return Mathf.Clamp01(Mathf.Pow(0.5F, iterationIn));
+        return Mathf.Clamp01(Mathf.Pow(0.9F, iterationIn));
     }
 }

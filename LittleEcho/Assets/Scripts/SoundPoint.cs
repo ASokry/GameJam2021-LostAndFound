@@ -51,7 +51,7 @@ public class SoundPoint
         position += direction * Vector3.right * deltaTime * SoundWave.WAVE_SPEED;
     }
 
-    void CheckForward(float deltaTime)
+    public bool CheckForward(float deltaTime)
     {
         RaycastHit2D hit = Physics2D.Raycast(position, direction * Vector3.right, SoundWave.WAVE_SPEED * deltaTime, parent.checkMask);
 
@@ -64,6 +64,10 @@ public class SoundPoint
             //{
             //    Debug.DrawRay(hit.point, Random.insideUnitSphere * 0.5F, Color.white, Random.value * 1F);
             //}
+
+            return true;
         }
+        else
+            return false;
     }
 }
