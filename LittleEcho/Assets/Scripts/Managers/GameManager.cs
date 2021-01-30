@@ -5,15 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
+    /// <summary>
+    /// All the states of the game
+    /// </summary>
     public enum GameState { MainMenu, Playing, Paused, GameOver}
 
-
-    private GameState _currentGameState = GameState.Playing;
+    /// <summary>
+    /// Stores the current state of the game
+    /// </summary>
     public GameState CurrentGameState
     {
-        set { _currentGameState = value; }
         get { return _currentGameState; }
     }
+    private GameState _currentGameState = GameState.Playing;
 
     protected override void Awake()
     {
@@ -21,10 +25,35 @@ public class GameManager : Singleton<GameManager>
         DontDestroyOnLoad(this.gameObject);
     }
 
-    // will include transitions
-    public void LoadScene(string scene, GameState newState)
+    /// <summary>
+    /// Changes the game state
+    /// </summary>
+    /// <param name="newState">The state to change to</param>
+    /// <param name="delay">Option delay to change</param>
+    public void ChangeState(GameState newState, int delay = 0)
     {
-        CurrentGameState = newState;
+        if (newState == CurrentGameState) return; // do nothing
+
+        if(delay > 0)
+        {        
+            StartCoroutine(ChangeStateInTime(newState, delay));
+        }
+        else
+        {
+            _currentGameState = newState;
+        }
+    }
+
+    IEnumerator ChangeStateInTime(GameState newState, int delay)
+    {
+        yield return new WaitForSeconds(delay);
+        _currentGameState = newState;
+    }
+
+    // will include transitions
+    public void LoadScene(string scene, GameState state)
+    {
+        ChangeState(state);
         SceneManager.LoadScene(scene);
     }
 
