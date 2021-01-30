@@ -2,29 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundPoint : MonoBehaviour
+public class SoundPoint
 {
-    [SerializeField]
-    private LayerMask checkMask;
-
     [SerializeField]
     private int numberOfPoints; // How many points does this sound wave consist of initially
 
     [SerializeField]
     private float duration;
 
+    private SoundWave parent;
+
+    private Vector3 position;
+
+    private Quaternion direction;
+
     private bool stopped = false;
 
-    // Start is called before the first frame update
-    void Start()
+    public SoundPoint(SoundWave parent, Vector2 position, Quaternion direction)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        this.parent = parent;
+        this.position = position;
+        this.direction = direction;
     }
 
     void Stop()
@@ -43,23 +41,22 @@ public class SoundPoint : MonoBehaviour
 
     void MoveForward(float deltaTime)
     {
-        transform.position += transform.right * deltaTime * SoundWave.waveSpeed;
+        position += direction * Vector3.right * deltaTime * SoundWave.waveSpeed;
     }
 
     void CheckForward(float deltaTime)
     {
-        Debug.DrawRay(transform.position, transform.right * SoundWave.waveSpeed * deltaTime, Color.white, 0.1F);
+        Debug.DrawRay(position, direction * Vector3.right * SoundWave.waveSpeed * deltaTime, Color.white, 0.1F);
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, SoundWave.waveSpeed * deltaTime, checkMask);
+        RaycastHit2D hit = Physics2D.Raycast(position, direction * Vector3.right, SoundWave.waveSpeed * deltaTime, parent.checkMask);
 
         if (hit.collider != null)
         {
             Stop();
 
-            Debug.Log("hit");
             for (int i = 0; i < 5; i++)
             {
-                Debug.DrawRay(hit.point, Random.insideUnitSphere, Color.blue, Random.value * 0.4F);
+                Debug.DrawRay(hit.point, Random.insideUnitSphere, Color.blue, Random.value * 1.4F);
             }
         }
     }
