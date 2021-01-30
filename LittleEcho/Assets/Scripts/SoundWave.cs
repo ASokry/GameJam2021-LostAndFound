@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SoundWave : MonoBehaviour
 {
-    public const float WAVE_SPEED = 5;
-    public const float ECHO_MULT = 0.4F;
-    public const float MINIMUM_DURATION = 0.4F;
+    public const float WAVE_SPEED = 8;
+    public const float ECHO_MULT = 0.5F;
+    public const float MINIMUM_DURATION = 0.5F;
+    public const int MAXIMUM_ITERATION = 3;
 
     private int numberOfPoints = 100; // How many points does this sound wave consist of initially
 
@@ -14,6 +15,7 @@ public class SoundWave : MonoBehaviour
     private float duration = 4;
     private float timeAlive = 0;
 
+    [SerializeField]
     private int iteration;
 
     [SerializeField]
@@ -77,39 +79,44 @@ public class SoundWave : MonoBehaviour
                 points.Add(point);
         }
 
-        // Assign echo status to some points
-        int numberOfEchos = EchosPerPoints(numberOfPoints);
-        int echoPoint = Random.Range(0, points.Count);
-
-        HashSet<int> takenPoints = new HashSet<int>();
-
-        // Try a percentage of the points
-        for (int i = 0; i < numberOfEchos; i++)
+        if (points.Count > 0)
         {
-            int counter = 10000;
+            // Assign echo status to some points
+            int numberOfEchos = EchosPerDurationIn(duration);
+            int echoPoint = Random.Range(0, points.Count);
 
-            // Keep trying until we have a new point
-            while (takenPoints.Contains(echoPoint))
+            HashSet<int> takenPoints = new HashSet<int>();
+
+
+            // Try a percentage of the points
+            for (int i = 0; i < numberOfEchos; i++)
             {
-                echoPoint = (echoPoint + Random.Range(1, points.Count)) % points.Count;
+                int counter = 10000;
 
-                // Shouldn't happen
-                counter--;
-                if (counter < 0)
+                // Keep trying until we have a new point
+                while (takenPoints.Contains(echoPoint))
                 {
-                    break;
+                    echoPoint = (echoPoint + Random.Range(1, points.Count)) % points.Count;
+
+                    // Shouldn't happen
+                    counter--;
+                    if (counter < 0)
+                    {
+                        break;
+                    }
                 }
+
+                takenPoints.Add(echoPoint);
+
+                points[echoPoint].spawnsEcho = true;
             }
-
-            takenPoints.Add(echoPoint);
-
-            points[echoPoint].spawnsEcho = true;
         }
     }
 
     public void SpawnEcho(SoundPoint pointIn)
     {
-        SpawnSoundWave(pointIn.position, duration * ECHO_MULT, iteration + 1);
+        if (duration * ECHO_MULT >= MINIMUM_DURATION && iteration + 1 <= MAXIMUM_ITERATION)
+            SpawnSoundWave(pointIn.position, duration * ECHO_MULT, iteration + 1);
     }
 
     void SpawnSoundWave(Vector3 position, float durationIn, int iterationIn)
@@ -121,16 +128,18 @@ public class SoundWave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float deltaTime = Time.deltaTime;
+
+        timeAlive += deltaTime;
+
         if (timeAlive > duration)
         {
-            Destroy(gameObject);
+            points.Clear();
+            if (source.clip && timeAlive > source.clip.length)
+                Destroy(gameObject);
         }
         else
         {
-            float deltaTime = Time.deltaTime;
-
-            timeAlive += deltaTime;
-
             // Update points
             for (int i = 0; i < points.Count; i++)
             {
@@ -162,17 +171,17 @@ public class SoundWave : MonoBehaviour
 
     private static int PointsPerDuration(float durationIn)
     {
-        return (int)durationIn * 25;
+        return (int)(durationIn * 30);
     }
 
-    private static int EchosPerPoints(int points)
+    private static int EchosPerDurationIn(float durationIn)
     {
-        return Mathf.Max(0, (int)(points * 0.1F) - 4);
+        return Mathf.Max(0, (int)(Mathf.Log(durationIn) + (durationIn + 1) / 2F - 1.5F));
     }
 
     private static float AudioVolumePerIteration(int iterationIn)
     {
-        return Mathf.Pow(0.33F, iterationIn);
+        return Mathf.Pow(0.4F, iterationIn) * iterationIn > 0 ? 0.4F : 1;
     }
 
     private static float AudioPitchPerIteration(int iterationIn)
