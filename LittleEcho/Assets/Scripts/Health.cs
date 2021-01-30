@@ -24,6 +24,7 @@ public class Health : MonoBehaviour
         if (health <=0)
         {
             // do something
+            GameManager.Instance.ChangeState(GameManager.GameState.GameOver, 1);
         }
     }
 

@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
 
+    [SerializeField]
+    private SoundWave flapPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,10 +88,12 @@ public class PlayerController : MonoBehaviour
     private void Jump()
     {
         // Uses W/S and UP/DOWN inputs
-        if (Input.GetButtonDown("Vertical"))
+        if (Input.GetButtonDown("Flap"))
         {
             //print("jump");
             rb.velocity = Vector2.up * flyForce;
+
+            Instantiate(flapPrefab, transform.position, Quaternion.identity);
         }
         
     }
