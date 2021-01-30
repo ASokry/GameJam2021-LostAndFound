@@ -13,9 +13,9 @@ public class SoundPoint
 
     public Quaternion direction;
 
-    private bool spawnsEcho = false;
+    public bool spawnsEcho = false;
 
-    private bool stopped = false;
+    public bool stopped = false;
 
     public SoundPoint(SoundWave parent, Vector2 position, Quaternion direction, bool spawnsEcho)
     {
@@ -49,7 +49,10 @@ public class SoundPoint
 
     void CheckForward(float deltaTime)
     {
-        Debug.DrawRay(position, direction * Vector3.right * SoundWave.WAVE_SPEED * deltaTime, Color.white, deltaTime);
+        //if (!spawnsEcho)
+        //    Debug.DrawRay(position, direction * Vector3.right * SoundWave.WAVE_SPEED * deltaTime, Color.white, deltaTime);
+        //else
+        //    Debug.DrawRay(position, direction * Vector3.right * SoundWave.WAVE_SPEED * deltaTime, Color.red, deltaTime * 10);
 
         RaycastHit2D hit = Physics2D.Raycast(position, direction * Vector3.right, SoundWave.WAVE_SPEED * deltaTime, parent.checkMask);
 
@@ -59,7 +62,7 @@ public class SoundPoint
 
             for (int i = 0; i < 5; i++)
             {
-                Debug.DrawRay(hit.point, Random.insideUnitSphere * 0.5F, Color.white, Random.value * 1.4F);
+                //Debug.DrawRay(hit.point, Random.insideUnitSphere * 0.5F, Color.white, Random.value * 1F);
             }
         }
     }
