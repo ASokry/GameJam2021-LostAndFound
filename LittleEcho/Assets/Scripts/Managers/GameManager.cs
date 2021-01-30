@@ -11,6 +11,7 @@ public class GameManager : Singleton<GameManager>
     private GameState _currentGameState = GameState.Playing;
     public GameState CurrentGameState
     {
+        set { _currentGameState = value; }
         get { return _currentGameState; }
     }
 
@@ -20,15 +21,21 @@ public class GameManager : Singleton<GameManager>
         DontDestroyOnLoad(this.gameObject);
     }
 
-    private void ChangeGameStateOnSceneLoad(string scene)
+    // will include transitions
+    public void LoadScene(string scene, GameState newState)
     {
-        // change state based on what scene was loaded
+        CurrentGameState = newState;
+        SceneManager.LoadScene(scene);
     }
 
-    // will include transitions
-    public void LoadScene(string scene)
+    private void Update()
     {
-        SceneManager.LoadScene(scene);
+        switch (CurrentGameState)
+        {
+            case GameState.GameOver:
+                // player has died, change scene to gameover
+                break;
+        }
     }
 
 
