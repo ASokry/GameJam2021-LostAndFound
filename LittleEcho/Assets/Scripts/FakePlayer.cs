@@ -9,24 +9,15 @@ public class FakePlayer : MonoBehaviour
     private float spawnTime;
 
     [SerializeField]
-    private float flapVolume = 1;
+    private SoundWave flapPrefab;
 
     [SerializeField]
-    private float screamVolume = 5;
-
-    [SerializeField]
-    private SoundWave prefab;
+    private SoundWave pingPrefab;
 
     // Start is called before the first frame update
     void Start()
     {
         spawnTime = Time.time;
-    }
-
-    void InstantiateWave(float duration)
-    {
-        SoundWave wave = Instantiate(prefab, transform.position, Quaternion.identity);
-        wave.Init(duration);
     }
 
     // Update is called once per frame
@@ -36,12 +27,12 @@ public class FakePlayer : MonoBehaviour
         {
             spawnTime = Time.time;
 
-            InstantiateWave(flapVolume);
+            Instantiate(flapPrefab, transform.position, Quaternion.identity);
         }
 
         if (Input.GetButtonDown("Jump"))
         {
-            InstantiateWave(screamVolume);
+            Instantiate(pingPrefab, transform.position, Quaternion.identity);
         }
     }
 }

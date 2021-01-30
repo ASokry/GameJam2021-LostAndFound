@@ -172,11 +172,11 @@ public class SoundWave : MonoBehaviour
 
     private static float AudioVolumePerIteration(int iterationIn)
     {
-        return Mathf.Clamp01(Mathf.Pow(0.33F, iterationIn));
+        return Mathf.Pow(0.33F, iterationIn);
     }
 
     private static float AudioPitchPerIteration(int iterationIn)
     {
-        return Mathf.Clamp01(Mathf.Pow(0.9F, iterationIn));
+        return Mathf.Pow(0.9F, Mathf.Max(0, iterationIn - 1));
     }
 }
