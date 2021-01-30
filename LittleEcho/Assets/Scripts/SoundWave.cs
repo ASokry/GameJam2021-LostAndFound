@@ -155,7 +155,7 @@ public class SoundWave : MonoBehaviour
 
                     float arcLength = 2 * Mathf.PI * (timeAlive * WAVE_SPEED) / numberOfPoints;
                     bool stopped = points[i].stopped || (i < points.Count - 1 ? points[i + 1].stopped : points[0].stopped);
-                    bool shortEnough = dir.magnitude <= arcLength + 0.1F || (stopped && dir.magnitude <= 2);
+                    bool shortEnough = dir.magnitude <= arcLength + 0.1F || (stopped && dir.magnitude <= 1);
 
                     Color color = iteration == 0 ? Color.yellow : iteration == 1 ? Color.red : iteration == 2 ? Color.magenta : Color.blue;
 
