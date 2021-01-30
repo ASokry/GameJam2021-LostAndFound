@@ -7,27 +7,30 @@ public class SoundPoint
     [SerializeField]
     private int numberOfPoints; // How many points does this sound wave consist of initially
 
-    [SerializeField]
-    private float duration;
-
     private SoundWave parent;
 
-    private Vector3 position;
+    public Vector3 position;
 
-    private Quaternion direction;
+    public Quaternion direction;
+
+    private bool spawnsEcho = false;
 
     private bool stopped = false;
 
-    public SoundPoint(SoundWave parent, Vector2 position, Quaternion direction)
+    public SoundPoint(SoundWave parent, Vector2 position, Quaternion direction, bool spawnsEcho)
     {
         this.parent = parent;
         this.position = position;
         this.direction = direction;
+        this.spawnsEcho = spawnsEcho;
     }
 
     void Stop()
     {
         stopped = true;
+
+        if (spawnsEcho)
+            parent.SpawnEcho(this);
     }
 
     public void Tick(float deltaTime)
@@ -41,14 +44,14 @@ public class SoundPoint
 
     void MoveForward(float deltaTime)
     {
-        position += direction * Vector3.right * deltaTime * SoundWave.waveSpeed;
+        position += direction * Vector3.right * deltaTime * SoundWave.WAVE_SPEED;
     }
 
     void CheckForward(float deltaTime)
     {
-        Debug.DrawRay(position, direction * Vector3.right * SoundWave.waveSpeed * deltaTime, Color.white, 0.1F);
+        Debug.DrawRay(position, direction * Vector3.right * SoundWave.WAVE_SPEED * deltaTime, Color.white, deltaTime);
 
-        RaycastHit2D hit = Physics2D.Raycast(position, direction * Vector3.right, SoundWave.waveSpeed * deltaTime, parent.checkMask);
+        RaycastHit2D hit = Physics2D.Raycast(position, direction * Vector3.right, SoundWave.WAVE_SPEED * deltaTime, parent.checkMask);
 
         if (hit.collider != null)
         {
@@ -56,7 +59,7 @@ public class SoundPoint
 
             for (int i = 0; i < 5; i++)
             {
-                Debug.DrawRay(hit.point, Random.insideUnitSphere, Color.blue, Random.value * 1.4F);
+                Debug.DrawRay(hit.point, Random.insideUnitSphere * 0.5F, Color.white, Random.value * 1.4F);
             }
         }
     }

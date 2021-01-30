@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SoundWave : MonoBehaviour
 {
-    public const float waveSpeed = 14;
+    public const float WAVE_SPEED = 10;
+    public const float ECHO_MULT = 0.5F;
 
     [SerializeField]
     private int numberOfPoints = 100; // How many points does this sound wave consist of initially
@@ -14,7 +15,7 @@ public class SoundWave : MonoBehaviour
     private float spawnTime;
 
     [SerializeField]
-    private SoundPoint prefab;
+    private SoundWave wavePrefab;
 
     [SerializeField]
     public LayerMask checkMask;
@@ -28,16 +29,35 @@ public class SoundWave : MonoBehaviour
     {
         points = new List<SoundPoint>();
         spawnTime = Time.time;
-        Invoke("InstantiatePoints", 0.5F);
+        SpawnPoints();
     }
 
-    void InstantiatePoints()
+    public void Init(float duration)
     {
+        this.duration = duration;
+        numberOfPoints = PointsPerDuration(duration);
+    }
+
+    void SpawnPoints()
+    {
+        int echoIndex = Random.Range(0, numberOfPoints);
         for (int i = 0; i < numberOfPoints; i++)
         {
-            SoundPoint point = new SoundPoint(this, transform.position, Quaternion.Euler(0, 0, i * (360F / numberOfPoints)));
+            SoundPoint point = new SoundPoint(this, transform.position, Quaternion.Euler(0, 0, i * (360F / numberOfPoints)), i == echoIndex);
             points.Add(point);
         }
+    }
+
+    public void SpawnEcho(SoundPoint pointIn)
+    {
+        if (duration * ECHO_MULT > 0.5) // Echo cutoff
+            SpawnSoundWave(pointIn.position, duration * ECHO_MULT);
+    }
+
+    void SpawnSoundWave(Vector3 position, float durationIn)
+    {
+        SoundWave wave = Instantiate(wavePrefab, position, Quaternion.identity);
+        wave.Init(durationIn);
     }
 
     // Update is called once per frame
@@ -45,7 +65,7 @@ public class SoundWave : MonoBehaviour
     {
         if (Time.time > spawnTime + duration)
         {
-            points.Clear();
+            Destroy(gameObject);
         }
         else
         {
@@ -55,5 +75,9 @@ public class SoundWave : MonoBehaviour
             }
         }
     }
+
+    private static int PointsPerDuration(float durationIn)
+    {
+        return (int)durationIn * 50;
+    }
 }
-;
