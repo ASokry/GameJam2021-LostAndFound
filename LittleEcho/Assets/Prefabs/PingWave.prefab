@@ -51,7 +51,7 @@ MonoBehaviour:
   wavePrefab: {fileID: 7967318258726834216}
   checkMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   source: {fileID: 5188365601558599276}
 --- !u!82 &5188365601558599276
 AudioSource:
