@@ -89,4 +89,9 @@ public class PlayerController : MonoBehaviour
         }
         
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
+    }
 }
