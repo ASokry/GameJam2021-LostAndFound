@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundWave : MonoBehaviour
 {
-    public const float WAVE_SPEED = 8;
+    public const float WAVE_SPEED = 2;
     public const float ECHO_MULT = 0.5F;
     public const float MINIMUM_DURATION = 0.5F;
     public const int MAXIMUM_ITERATION = 3;
