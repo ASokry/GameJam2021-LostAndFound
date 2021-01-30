@@ -35,11 +35,15 @@ public class SoundPoint
 
     public void Tick(float deltaTime)
     {
-        if (stopped)
-            return;
+        if (!stopped)
+        {
+            MoveForward(deltaTime);
+            CheckForward(deltaTime);
+        }
 
-        MoveForward(deltaTime);
-        CheckForward(deltaTime);
+        float length = 0.1F;
+        Debug.DrawRay(position - Vector3.up * length, Vector3.up * length * 2, Color.black, deltaTime);
+        Debug.DrawRay(position - Vector3.right * length, Vector3.right * length * 2, Color.black, deltaTime);
     }
 
     void MoveForward(float deltaTime)
@@ -49,21 +53,17 @@ public class SoundPoint
 
     void CheckForward(float deltaTime)
     {
-        //if (!spawnsEcho)
-        //    Debug.DrawRay(position, direction * Vector3.right * SoundWave.WAVE_SPEED * deltaTime, Color.white, deltaTime);
-        //else
-        //    Debug.DrawRay(position, direction * Vector3.right * SoundWave.WAVE_SPEED * deltaTime, Color.red, deltaTime * 10);
-
         RaycastHit2D hit = Physics2D.Raycast(position, direction * Vector3.right, SoundWave.WAVE_SPEED * deltaTime, parent.checkMask);
 
         if (hit.collider != null)
         {
             Stop();
 
-            for (int i = 0; i < 5; i++)
-            {
-                //Debug.DrawRay(hit.point, Random.insideUnitSphere * 0.5F, Color.white, Random.value * 1F);
-            }
+            //// Impact sparks
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Debug.DrawRay(hit.point, Random.insideUnitSphere * 0.5F, Color.white, Random.value * 1F);
+            //}
         }
     }
 }

@@ -15,6 +15,8 @@ public class SoundWave : MonoBehaviour
     private float duration = 4;
     private float spawnTime;
 
+    private int iteration;
+
     [SerializeField]
     private SoundWave wavePrefab;
 
@@ -24,19 +26,32 @@ public class SoundWave : MonoBehaviour
     [SerializeField]
     private List<SoundPoint> points;
 
+    [SerializeField]
+    private AudioSource source;
 
     // Start is called before the first frame update
     void Start()
     {
+        Init(duration, 0);
+
         points = new List<SoundPoint>();
         spawnTime = Time.time;
         SpawnPoints();
     }
 
-    public void Init(float duration)
+    private void Init(float duration, int iteration)
     {
         this.duration = duration;
         numberOfPoints = PointsPerDuration(duration);
+
+        this.iteration = iteration;
+        source.volume *= AudioVolumePerIteration(iteration);
+        source.pitch *= AudioPitchPerIteration(iteration);
+    }
+
+    public void Init(float duration)
+    {
+        Init(duration, 0);
     }
 
     void SpawnPoints()
@@ -80,13 +95,13 @@ public class SoundWave : MonoBehaviour
     public void SpawnEcho(SoundPoint pointIn)
     {
         //if (duration * ECHO_MULT > MINIMUM_DURATION) // Echo cutoff
-            SpawnSoundWave(pointIn.position, duration * ECHO_MULT);
+            SpawnSoundWave(pointIn.position, duration * ECHO_MULT, iteration + 1);
     }
 
-    void SpawnSoundWave(Vector3 position, float durationIn)
+    void SpawnSoundWave(Vector3 position, float durationIn, int iterationIn)
     {
         SoundWave wave = Instantiate(wavePrefab, position, Quaternion.identity);
-        wave.Init(durationIn);
+        wave.Init(durationIn, iterationIn);
     }
 
     // Update is called once per frame
@@ -107,9 +122,9 @@ public class SoundWave : MonoBehaviour
             // Draw edge
             for (int i = 0; i < points.Count; i++)
             {
-                Vector3 dir = 0.5F * (i < points.Count - 1 ? points[i].position - points[i + 1].position : points[i].position - points[0].position);
-                if (dir.magnitude < 0.5F)
-                    Debug.DrawRay(points[i].position - dir, 2 * dir, Color.white, Time.deltaTime);
+                Vector3 dir = 1F * (i < points.Count - 1 ? points[i].position - points[i + 1].position : points[i].position - points[0].position);
+                if (dir.magnitude < 0.5F || (!points[i].stopped && !(i < points.Count - 1 ? points[i + 1].stopped : points[0].stopped)))
+                    Debug.DrawRay(points[i].position, -dir, Color.red, Time.deltaTime);
             }
         }
     }
@@ -122,5 +137,15 @@ public class SoundWave : MonoBehaviour
     private static int EchosPerPoints(int points)
     {
         return Mathf.Max(0, (int)(points * 0.1F) - 4);
+    }
+
+    private static float AudioVolumePerIteration(int iterationIn)
+    {
+        return Mathf.Clamp01(Mathf.Pow(0.33F, iterationIn));
+    }
+
+    private static float AudioPitchPerIteration(int iterationIn)
+    {
+        return Mathf.Clamp01(Mathf.Pow(0.5F, iterationIn));
     }
 }
