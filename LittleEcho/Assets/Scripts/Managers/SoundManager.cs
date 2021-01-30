@@ -7,7 +7,6 @@ public class SoundManager : Singleton<SoundManager>
 {
     [SerializeField] AudioMixer mainAudioMixer;
 
-
     public float GetMasterVolume()
     {
         mainAudioMixer.GetFloat("masterVolume", out float value);
@@ -25,7 +24,6 @@ public class SoundManager : Singleton<SoundManager>
         mainAudioMixer.GetFloat("sfxVolume", out float value);
         return value;
     }
-
 
     public void SetMasterVolume(float value)
     {
