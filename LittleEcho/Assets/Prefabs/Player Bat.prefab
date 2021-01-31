@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 462511900}
   - component: {fileID: 462511902}
   - component: {fileID: 462511901}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 1412625253}
   - component: {fileID: 1412625252}
   - component: {fileID: 1412625251}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 1441824497}
   - component: {fileID: 1441824496}
   - component: {fileID: 1441824495}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 1838219301}
   - component: {fileID: 1838219303}
   - component: {fileID: 1838219302}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,7 +375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4330231093143913775}
   - component: {fileID: 4330231093143913774}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player Bat Art
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4330231094497650158}
   - component: {fileID: 4330231094497650159}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Delete ths later
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4330231094660552614}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +572,8 @@ GameObject:
   - component: {fileID: 4330231094849033781}
   - component: {fileID: 4330231094849033784}
   - component: {fileID: 1970543195}
-  m_Layer: 0
+  - component: {fileID: 7181940292737591680}
+  m_Layer: 9
   m_Name: Player Bat
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -640,6 +641,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  flapPrefab: {fileID: 7967318258726834216, guid: 8e95310e3c7e4a44c980ecba76b23a9d, type: 3}
+  flapCooldown: 0.1
 --- !u!58 &4330231094849033784
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -649,7 +652,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 4330231094849033780}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8b65ad688601ddf448c4c871a5bada5f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -670,3 +673,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   healthBar: {fileID: 1441824495}
+--- !u!114 &7181940292737591680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4330231094849033780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0351a7539fc284840a9cd493cd5bbbc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pingPrefab: {fileID: 7967318258726834216, guid: 99338c329be40514797ff4e4026d83b4, type: 3}
+  pingCooldown: 10
