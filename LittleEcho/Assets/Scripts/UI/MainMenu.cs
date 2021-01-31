@@ -21,12 +21,15 @@ public class MainMenu : MonoBehaviour
     [SerializeField] AudioClip startMenuSound;
     private AudioSource audioSource;
 
-    protected virtual void Start()
+    private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+    }
+
+    protected virtual void Start()
+    {
         InitiateMenus();
         InitiateSettings();
-        audioSource.PlayOneShot(startMenuSound);
     }
 
     protected virtual void OnEnable()
