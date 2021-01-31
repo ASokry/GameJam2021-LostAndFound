@@ -47,7 +47,7 @@ MonoBehaviour:
   duration: 1
   checkMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3221225728
   echoPrefab: {fileID: 7967318258726834216}
   normalSound:
   - {fileID: 8300000, guid: e02e55755052e8144980e64e9b47cb20, type: 3}
@@ -85,7 +85,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1.91
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 50
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
