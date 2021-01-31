@@ -40,6 +40,14 @@ public class SoundWave : MonoBehaviour
     [SerializeField]
     private AudioClip echoSound = null;
 
+    [Header("Visual Settings")]
+    [SerializeField]
+    private float thickness = 4;
+    [SerializeField]
+    private Color normalColor = Color.cyan;
+    [SerializeField]
+    private Color echoColor = Color.blue;
+
     // Representation of the sound wave
     private List<SoundPoint> points;
     private VectorLine line;
@@ -58,7 +66,7 @@ public class SoundWave : MonoBehaviour
         source.Play();
 
         // Create a VectorLine for rendering
-        line = new VectorLine(name, new List<Vector3>(), 4F);
+        line = new VectorLine(name, new List<Vector3>(), thickness);
 
         // Based on the number of sound points we need, spawn them in
         points = new List<SoundPoint>();
@@ -195,9 +203,10 @@ public class SoundWave : MonoBehaviour
     /// </summary>
     private void RenderPoints()
     {
-        // Fade color over time
-        Color color = iteration == 0 ? Color.yellow : iteration == 1 ? Color.red : iteration == 2 ? Color.magenta : Color.blue;
+        // Fade color over iteration
+        Color color = Color.Lerp(normalColor, echoColor, (float)iteration / MAXIMUM_ITERATION);
 
+        // Fade color over time
         float alpha = timeAlive / duration;
         alpha = 1 - alpha * alpha;
         color = new Color(color.r, color.g, color.b, color.a * alpha);

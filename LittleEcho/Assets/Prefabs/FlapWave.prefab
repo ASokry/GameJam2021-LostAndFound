@@ -45,13 +45,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 1
-  normalSound: {fileID: 8300000, guid: c94dce4a816e1f34ba946167c7e4e096, type: 3}
-  echoSound: {fileID: 0}
-  echoPrefab: {fileID: 7967318258726834216}
   checkMask:
     serializedVersion: 2
     m_Bits: 311
-  source: {fileID: 5188365601558599276}
+  echoPrefab: {fileID: 7967318258726834216}
+  normalSound: {fileID: 8300000, guid: c94dce4a816e1f34ba946167c7e4e096, type: 3}
+  echoSound: {fileID: 0}
+  thickness: 2
+  normalColor: {r: 0.8113208, g: 0.7694953, b: 0.69268423, a: 1}
+  echoColor: {r: 0, g: 0, b: 0, a: 0.5019608}
 --- !u!82 &5188365601558599276
 AudioSource:
   m_ObjectHideFlags: 0
