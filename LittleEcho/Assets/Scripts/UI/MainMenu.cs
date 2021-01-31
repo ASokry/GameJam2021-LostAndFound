@@ -46,35 +46,35 @@ public class MainMenu : MonoBehaviour
 
     protected virtual void InitiateSettings()
     {
-        masterVolume.minValue = -20;
-        masterVolume.maxValue = 0;
+        masterVolume.minValue = 0;
+        masterVolume.maxValue = 1;
 
-        musicVolume.minValue = -20;
-        musicVolume.maxValue = 0;
+        musicVolume.minValue = 0;
+        musicVolume.maxValue = 1;
 
-        sfxVolume.minValue = -20;
-        sfxVolume.maxValue = 0;
+        sfxVolume.minValue = 0;
+        sfxVolume.maxValue = 1;
     }
 
     public void ChangeMasterVolume(float value)
     {
-       SoundManager.Instance.SetMasterVolume(value);
+        SoundManager.Instance.SetMasterVolume(ValueToDecibels(value));
     }
 
     public void ChangeMusicVolume(float value)
     {
-       SoundManager.Instance.SetMusicVolume(value);
+        SoundManager.Instance.SetMusicVolume(ValueToDecibels(value));
     }
 
     public void ChangeSFXVolume(float value)
     {
-       SoundManager.Instance.SetSFXVolume(value);
+        SoundManager.Instance.SetSFXVolume(ValueToDecibels(value));
     }
 
     public void PlayGame()
     {
 
-        GameManager.Instance.LoadScene("Level_test_1", GameManager.GameState.Playing);
+        GameManager.Instance.LoadScene("Level_1", GameManager.GameState.Playing);
     }
 
     public void QuitGame()
@@ -95,5 +95,10 @@ public class MainMenu : MonoBehaviour
     public void PlayHoverSound()
     {
         audioSource.PlayOneShot(hoverButtonSound);
+    }
+
+    float ValueToDecibels(float value)
+    {
+        return Mathf.Clamp(10 * Mathf.Log10(value), -192, 0);
     }
 }
