@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518630de0a1e7f64da2e32f53bbc2296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 0.8
+  duration: 1
   checkMask:
     serializedVersion: 2
     m_Bits: 3221225728

@@ -5752,7 +5752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1352917611, guid: 5695fc778520b0e45acc8a6d6939d109, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1352917613, guid: 5695fc778520b0e45acc8a6d6939d109, type: 3}
       propertyPath: growRate
@@ -6867,7 +6867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6165218183924273643, guid: 73b03a4557b930349aefebc2b386aead, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6165218183924273643, guid: 73b03a4557b930349aefebc2b386aead, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
