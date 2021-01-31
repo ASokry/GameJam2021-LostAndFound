@@ -289,6 +289,8 @@ MonoBehaviour:
   rate: 0.01
   theSpeed: 0
   timeBetweenMove: 4
+  flapWave: {fileID: 7967318258726834216, guid: 3df79267e7134b64fa87921b33492ee0, type: 3}
+  flapCooldown: 0.4
 --- !u!82 &4173137696028047971
 AudioSource:
   m_ObjectHideFlags: 0

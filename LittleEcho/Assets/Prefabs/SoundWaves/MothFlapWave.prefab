@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7967318258726834216}
   - component: {fileID: 5188365601558599276}
   m_Layer: 0
-  m_Name: FlapWave
+  m_Name: MothFlapWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,15 +50,7 @@ MonoBehaviour:
     m_Bits: 311
   echoPrefab: {fileID: 7967318258726834216}
   normalSound:
-  - {fileID: 8300000, guid: c94dce4a816e1f34ba946167c7e4e096, type: 3}
-  - {fileID: 8300000, guid: c27065e6c2e0bdf45af519d56001671a, type: 3}
-  - {fileID: 8300000, guid: ee5e5b4d91b74a243bac718a1542b95d, type: 3}
-  - {fileID: 8300000, guid: 21a7dac9bb1aa5848b7bd2151a9b3879, type: 3}
-  - {fileID: 8300000, guid: 67db9098a84d1314bad7b2063e96528b, type: 3}
-  - {fileID: 8300000, guid: af3b79d95ba79c345ac556832825792e, type: 3}
-  - {fileID: 8300000, guid: f0ebea841f42eea4dbb2a240d2b4474b, type: 3}
-  - {fileID: 8300000, guid: 732eed35cc3e164409ca5f0c77bb0e33, type: 3}
-  - {fileID: 8300000, guid: ff426ca88d599a04fa5001365a7214eb, type: 3}
+  - {fileID: 0}
   echoSound:
   - {fileID: 0}
   thickness: 2

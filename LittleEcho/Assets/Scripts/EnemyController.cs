@@ -31,6 +31,13 @@ public class EnemyController : MonoBehaviour
     public float timeBetweenMove = 4f;
     private float moveCountdown;
 
+    [SerializeField]
+    private SoundWave flapWave;
+
+    [SerializeField]
+    private float flapCooldown = 0.4F;
+    private float flapTimer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +53,14 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
+        flapTimer -= Time.deltaTime;
+        if (flapTimer < 0)
+        {
+            flapTimer = flapCooldown;
+
+            Instantiate(flapWave, transform.position, Quaternion.identity);
+        }
+
         theSpeed = Mathf.Clamp(speed, minSpeed, maxSpeed);
         // Check if the movePoints array is not empty
         if (movePoints.Length >= 2)
