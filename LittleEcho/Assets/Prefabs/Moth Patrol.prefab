@@ -147,7 +147,7 @@ GameObject:
   m_Layer: 0
   m_Name: Patrol Point
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -177,7 +177,7 @@ GameObject:
   m_Layer: 0
   m_Name: Patrol Point (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -289,6 +289,8 @@ MonoBehaviour:
   rate: 0.01
   theSpeed: 0
   timeBetweenMove: 4
+  flapWave: {fileID: 7967318258726834216, guid: 3df79267e7134b64fa87921b33492ee0, type: 3}
+  flapCooldown: 0.4
 --- !u!82 &4173137696028047971
 AudioSource:
   m_ObjectHideFlags: 0
