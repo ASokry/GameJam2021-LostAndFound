@@ -4,22 +4,46 @@ using UnityEngine;
 
 public class WaterDripSource : MonoBehaviour
 {
-    [SerializeField] int dripFrequency = 2;
+    [SerializeField] float dripFrequency = 2;
+    [SerializeField] ObjectPool waterDropPool;
+    float totalTime;
+    float coolDown;
 
     private void Start()
     {
-        InvokeRepeating("DripWater", 0, dripFrequency);
+        dripFrequency += Random.Range(.1f, .5f);
+        totalTime = 0;
+        coolDown = dripFrequency;
+        StartCoroutine(DripWater(dripFrequency));
     }
 
-    public void DripWater()
+    IEnumerator DripWater(float frequency)
     {
-        var waterDrop = ObjectPool.SharedInstance.GetPooledObject();
-        if (waterDrop != null)
+
+        yield return new WaitUntil(() =>
         {
-            waterDrop.transform.position = this.transform.position;
-            waterDrop.SetActive(true);
-        }
+            if (GameManager.Instance.CurrentGameState != GameManager.GameState.Playing) return true;
+
+            if (totalTime - coolDown >= dripFrequency
+            && GameManager.Instance.CurrentGameState != GameManager.GameState.Paused)
+            {
+                coolDown = totalTime;
+
+                var waterDrop = waterDropPool.GetPooledObject();
+                if (waterDrop != null)
+                {
+                    waterDrop.transform.position = this.transform.position;
+                    waterDrop.SetActive(true);
+                }
+            }
+
+            totalTime += Time.deltaTime;
+
+            return false;
+
+        });
     }
+
 
 
 }

@@ -49,8 +49,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 311
   echoPrefab: {fileID: 7967318258726834216}
-  normalSound: {fileID: 8300000, guid: c66d75b7575423c47b05874e2e923761, type: 3}
-  echoSound: {fileID: 8300000, guid: 4dc30c1035954814b93978003170284d, type: 3}
+  normalSound:
+  - {fileID: 8300000, guid: c66d75b7575423c47b05874e2e923761, type: 3}
+  echoSound:
+  - {fileID: 8300000, guid: 4dc30c1035954814b93978003170284d, type: 3}
   thickness: 3
   normalColor: {r: 0, g: 1, b: 1, a: 1}
   echoColor: {r: 0, g: 0, b: 1, a: 0.2509804}
@@ -63,7 +65,7 @@ AudioSource:
   m_GameObject: {fileID: 7967318258726834219}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -7941074908762098723, guid: a152e9badae777e42a8f4a0f4ce9cdad, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.5

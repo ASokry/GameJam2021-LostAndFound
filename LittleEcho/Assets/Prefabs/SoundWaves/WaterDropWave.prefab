@@ -48,9 +48,19 @@ MonoBehaviour:
   checkMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  echoPrefab: {fileID: 0}
-  normalSound: {fileID: 8300000, guid: 9eccbf5f2d60f864f82eb7bbb38aeacf, type: 3}
-  echoSound: {fileID: 8300000, guid: b17b508e82d1b184cb1b1b385f4df149, type: 3}
+  echoPrefab: {fileID: 7967318258726834216}
+  normalSound:
+  - {fileID: 8300000, guid: e02e55755052e8144980e64e9b47cb20, type: 3}
+  - {fileID: 8300000, guid: 9eccbf5f2d60f864f82eb7bbb38aeacf, type: 3}
+  - {fileID: 8300000, guid: e20968c310f9eb84cb28cab9bd02d066, type: 3}
+  - {fileID: 8300000, guid: 0e4879b3e51d0394695d200bef0aa556, type: 3}
+  - {fileID: 8300000, guid: 5ff1d7e211aedde4b92b8d2c7af74824, type: 3}
+  echoSound:
+  - {fileID: 8300000, guid: 5acc2c2b8598b6440a4a5bee5e6bb0a4, type: 3}
+  - {fileID: 8300000, guid: b17b508e82d1b184cb1b1b385f4df149, type: 3}
+  - {fileID: 8300000, guid: f87f5c10ebd674740864856df4d64400, type: 3}
+  - {fileID: 8300000, guid: d0f18c8d0e879a54ab528222480ddb92, type: 3}
+  - {fileID: 8300000, guid: fafba45fa81877b41a06378c70d80dfe, type: 3}
   thickness: 4
   normalColor: {r: 0, g: 1, b: 1, a: 1}
   echoColor: {r: 0, g: 0, b: 1, a: 1}
@@ -73,11 +83,11 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 1.91
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -110,7 +120,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
