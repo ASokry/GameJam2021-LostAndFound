@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private Animator animator;
     private float moveInput;
 
     // Movement Variables
@@ -31,7 +32,7 @@ public class PlayerController : MonoBehaviour
     {
         // Get the Rigidbody Component of the GameObject
         rb = GetComponent<Rigidbody2D>();
-
+        animator = GetComponentInChildren<Animator>();
         flapTimer = flapCooldown;
     }
 
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
         if (GameManager.Instance.CurrentGameState != GameManager.GameState.Paused)
         {
             UpdateInput();
+            animator.SetBool("IsFlying", !isGrounded);
         }
     }
 
