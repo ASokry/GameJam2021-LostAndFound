@@ -301,7 +301,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7941074908762098723, guid: a152e9badae777e42a8f4a0f4ce9cdad, type: 2}
-  m_audioClip: {fileID: 8300000, guid: eba0e6744945f3d4ea814e5ed9a8eb9a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 64b6db8c340dbfb4c83d39ea4f62900c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -516,4 +516,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57acb1dca37302844812baf297574476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 25

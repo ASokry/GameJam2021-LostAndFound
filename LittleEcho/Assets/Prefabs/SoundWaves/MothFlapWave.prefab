@@ -54,7 +54,7 @@ MonoBehaviour:
   echoSound:
   - {fileID: 0}
   thickness: 2
-  normalColor: {r: 0.88902485, g: 1, b: 0.2688679, a: 0.7019608}
+  normalColor: {r: 0.778927, g: 1, b: 0.27058828, a: 0.7019608}
   echoColor: {r: 0.06446322, g: 0.23584908, b: 0, a: 0.5019608}
 --- !u!82 &5188365601558599276
 AudioSource:

@@ -669,7 +669,7 @@ MonoBehaviour:
   facingRight: 1
   walkSpeed: 2
   flySpeed: 4
-  flyForce: 2.5
+  flyForce: 3.25
   isGrounded: 0
   groundCheck: {fileID: 4330231094660552614}
   checkRadius: 0.15

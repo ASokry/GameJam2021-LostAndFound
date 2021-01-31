@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518630de0a1e7f64da2e32f53bbc2296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 1
+  duration: 2.5
   checkMask:
     serializedVersion: 2
     m_Bits: 1073742080
@@ -62,8 +62,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d0f18c8d0e879a54ab528222480ddb92, type: 3}
   - {fileID: 8300000, guid: fafba45fa81877b41a06378c70d80dfe, type: 3}
   thickness: 4
-  normalColor: {r: 0, g: 1, b: 1, a: 1}
-  echoColor: {r: 0, g: 0, b: 1, a: 1}
+  normalColor: {r: 0, g: 1, b: 1, a: 0.59607846}
+  echoColor: {r: 0, g: 0, b: 1, a: 0.6039216}
 --- !u!82 &5188365601558599276
 AudioSource:
   m_ObjectHideFlags: 0
@@ -76,7 +76,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -7941074908762098723, guid: a152e9badae777e42a8f4a0f4ce9cdad, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -85,7 +85,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1.91
   MinDistance: 1
-  MaxDistance: 50
+  MaxDistance: 40
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
