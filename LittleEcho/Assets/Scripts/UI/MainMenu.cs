@@ -31,7 +31,8 @@ public class MainMenu : MonoBehaviour
 
     protected virtual void OnEnable()
     {
-        audioSource.PlayOneShot(startMenuSound);
+        // BUG after pause, causes error
+        //audioSource.PlayOneShot(startMenuSound);
     }    
 
     protected virtual void InitiateMenus()
