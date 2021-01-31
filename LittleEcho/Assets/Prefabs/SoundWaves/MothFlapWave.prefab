@@ -47,15 +47,15 @@ MonoBehaviour:
   duration: 0.8
   checkMask:
     serializedVersion: 2
-    m_Bits: 311
+    m_Bits: 1073742080
   echoPrefab: {fileID: 7967318258726834216}
   normalSound:
   - {fileID: 0}
   echoSound:
   - {fileID: 0}
   thickness: 2
-  normalColor: {r: 0.8113208, g: 0.7694953, b: 0.69268423, a: 0.7019608}
-  echoColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+  normalColor: {r: 0.88902485, g: 1, b: 0.2688679, a: 0.7019608}
+  echoColor: {r: 0.06446322, g: 0.23584908, b: 0, a: 0.5019608}
 --- !u!82 &5188365601558599276
 AudioSource:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 1.6
   MinDistance: 1
   MaxDistance: 50
   Pan2D: 0
