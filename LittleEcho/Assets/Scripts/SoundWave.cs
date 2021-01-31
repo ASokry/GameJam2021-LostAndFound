@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Vectrosity;
 
 public class SoundWave : MonoBehaviour
 {
@@ -34,6 +35,8 @@ public class SoundWave : MonoBehaviour
     [SerializeField]
     private AudioSource source;
 
+    private VectorLine line;
+
     private bool initialized = false;
 
     // Start is called before the first frame update
@@ -52,6 +55,9 @@ public class SoundWave : MonoBehaviour
         initialized = true;
 
         Debug.Log(iteration);
+
+        line = new VectorLine(name, new List<Vector3>(), 4F);
+        //line.drawTransform.SetParent(transform);
 
         this.duration = duration;
         numberOfPoints = PointsPerDuration(duration);
@@ -75,7 +81,13 @@ public class SoundWave : MonoBehaviour
             SoundPoint point = new SoundPoint(this, transform.position, Quaternion.Euler(0, 0, i * (360F / numberOfPoints)), false);
 
             if (!point.CheckForward(0.1F)) // Too close to a wall?
+            {
                 points.Add(point);
+
+                // Cache two positions per point
+                line.points3.Add(point.position);
+                line.points3.Add(point.position);
+            }
         }
 
         if (points.Count > 0)
@@ -133,9 +145,7 @@ public class SoundWave : MonoBehaviour
 
         if (timeAlive > duration)
         {
-            points.Clear();
-            if (source.clip && timeAlive > source.clip.length)
-                Destroy(gameObject);
+            End();
         }
         else
         {
@@ -148,24 +158,47 @@ public class SoundWave : MonoBehaviour
             // Draw edge
             if (points.Count > 1)
             {
+                Color color = iteration == 0 ? Color.yellow : iteration == 1 ? Color.red : iteration == 2 ? Color.magenta : Color.blue;
+
+                float alpha = timeAlive / duration;
+                alpha = 1 - alpha * alpha;
+                color = new Color(color.r, color.g, color.b, color.a * alpha);
+
+                line.color = color;
+
+
                 for (int i = 0; i < points.Count; i++)
                 {
-                    Vector3 dir = -(i < points.Count - 1 ? points[i].position - points[i + 1].position : points[i].position - points[0].position);
+                    SoundPoint pointB = i < points.Count - 1 ? points[i + 1] : points[0];
+
+                    Vector3 dir = -(points[i].position - pointB.position);
 
                     float arcLength = 2 * Mathf.PI * (timeAlive * WAVE_SPEED) / numberOfPoints;
-                    bool stopped = points[i].stopped || (i < points.Count - 1 ? points[i + 1].stopped : points[0].stopped);
+                    bool stopped = points[i].stopped || pointB.stopped;
                     bool shortEnough = dir.magnitude <= arcLength + 0.1F || (stopped && dir.magnitude <= 1);
-
-                    Color color = iteration == 0 ? Color.yellow : iteration == 1 ? Color.red : iteration == 2 ? Color.magenta : Color.blue;
 
                     RaycastHit2D hit = Physics2D.Raycast(points[i].position, dir, dir.magnitude, checkMask);
                     if (shortEnough && hit.collider == null)
                     {
-                        Debug.DrawRay(points[i].position, dir, color, deltaTime);
+                        line.points3[2 * i] = points[i].position;
+                        line.points3[2 * i + 1] = pointB.position;
+
+                        //Debug.DrawRay(points[i].position, dir, color, deltaTime);
                     }
                 }
+
+                line.Draw();
             }
         }
+    }
+
+    private void End()
+    {
+        points.Clear();
+        VectorLine.Destroy(ref line);
+
+        if (source.clip && timeAlive > source.clip.length)
+            Destroy(gameObject);
     }
 
     private static int PointsPerDuration(float durationIn)

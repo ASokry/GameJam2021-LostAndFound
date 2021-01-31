@@ -40,10 +40,6 @@ public class SoundPoint
             MoveForward(deltaTime);
             CheckForward(deltaTime);
         }
-
-        float length = 0.1F;
-        Debug.DrawRay(position - Vector3.up * length, Vector3.up * length * 2, Color.black, deltaTime);
-        Debug.DrawRay(position - Vector3.right * length, Vector3.right * length * 2, Color.black, deltaTime);
     }
 
     void MoveForward(float deltaTime)
@@ -58,12 +54,6 @@ public class SoundPoint
         if (hit.collider != null)
         {
             Stop();
-
-            //// Impact sparks
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    Debug.DrawRay(hit.point, Random.insideUnitSphere * 0.5F, Color.white, Random.value * 1F);
-            //}
 
             return true;
         }
