@@ -54,8 +54,8 @@ MonoBehaviour:
   echoSound:
   - {fileID: 8300000, guid: 4dc30c1035954814b93978003170284d, type: 3}
   thickness: 3
-  normalColor: {r: 0, g: 1, b: 1, a: 1}
-  echoColor: {r: 0, g: 0, b: 1, a: 0.2509804}
+  normalColor: {r: 1, g: 0.8520418, b: 0, a: 1}
+  echoColor: {r: 1, g: 0.018630989, b: 0, a: 0.2509804}
 --- !u!82 &5188365601558599276
 AudioSource:
   m_ObjectHideFlags: 0
