@@ -6,7 +6,7 @@ using Vectrosity;
 public class SoundWave : MonoBehaviour
 {
     // Constants
-    public const float WAVE_SPEED = 2; // Speed at which wave expands
+    public const float WAVE_SPEED = 4; // Speed at which wave expands
     public const float ECHO_MULT = 0.5F; // Duration multiplier applied to each echo
     public const int MAXIMUM_ITERATION = 3; // How many recursive echos are allowed
 
