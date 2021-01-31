@@ -30,11 +30,12 @@ public class MainMenu : MonoBehaviour
     {
         InitiateMenus();
         InitiateSettings();
+        Time.timeScale = 1;
     }
 
     protected virtual void OnEnable()
     {
-        audioSource.PlayOneShot(startMenuSound);
+        //audioSource.PlayOneShot(startMenuSound);
     }    
 
     protected virtual void InitiateMenus()
@@ -72,6 +73,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+
         GameManager.Instance.LoadScene("Level_test_1", GameManager.GameState.Playing);
     }
 
