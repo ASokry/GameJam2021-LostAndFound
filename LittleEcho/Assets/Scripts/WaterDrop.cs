@@ -8,7 +8,8 @@ public class WaterDrop : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameObject.Instantiate(soundWave);
+        var wave = GameObject.Instantiate(soundWave);
+        wave.transform.position = this.transform.position;
         this.gameObject.SetActive(false);
         
     }
