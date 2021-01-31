@@ -5,8 +5,7 @@ using UnityEngine;
 public class PlayerAbilities : MonoBehaviour
 {
     [SerializeField]
-    private SoundWave pingPrefab;
-
+    private SoundWave pingPrefab = null;
     [SerializeField]
     private float pingCooldown = 10;
     private float pingTimer;

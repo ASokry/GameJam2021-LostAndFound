@@ -28,7 +28,7 @@ public class SoundWave : MonoBehaviour
 
     // Sound wave template for echos
     [SerializeField]
-    private SoundWave echoPrefab;
+    private SoundWave echoPrefab = null;
 
     // Starts at 0. Each echo increases the iteration by 1
     private int iteration;
@@ -36,9 +36,9 @@ public class SoundWave : MonoBehaviour
     [Header("Audio Settings")]
     // Audio to play when spawned or echod
     [SerializeField]
-    private AudioClip normalSound;
+    private AudioClip normalSound = null;
     [SerializeField]
-    private AudioClip echoSound;
+    private AudioClip echoSound = null;
 
     // Representation of the sound wave
     private List<SoundPoint> points;
