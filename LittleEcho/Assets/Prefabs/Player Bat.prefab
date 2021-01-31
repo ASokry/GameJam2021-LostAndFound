@@ -642,6 +642,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   flapPrefab: {fileID: 7967318258726834216, guid: 8e95310e3c7e4a44c980ecba76b23a9d, type: 3}
+  flapCooldown: 0.1
 --- !u!58 &4330231094849033784
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -685,3 +686,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pingPrefab: {fileID: 7967318258726834216, guid: 99338c329be40514797ff4e4026d83b4, type: 3}
+  pingCooldown: 10
