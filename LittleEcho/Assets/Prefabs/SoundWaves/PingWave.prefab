@@ -47,7 +47,7 @@ MonoBehaviour:
   duration: 8
   checkMask:
     serializedVersion: 2
-    m_Bits: 3221225728
+    m_Bits: 1073742080
   echoPrefab: {fileID: 7967318258726834216}
   normalSound:
   - {fileID: 8300000, guid: c66d75b7575423c47b05874e2e923761, type: 3}

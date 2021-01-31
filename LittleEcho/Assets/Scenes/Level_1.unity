@@ -269,6 +269,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2034701846}
     m_Modifications:
+    - target: {fileID: 2615825248099013516, guid: 44ad05cf6323fb248a232826d7e16443, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2615825248099013516, guid: 44ad05cf6323fb248a232826d7e16443, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.23
+      objectReference: {fileID: 0}
     - target: {fileID: 2615825248268957260, guid: 44ad05cf6323fb248a232826d7e16443, type: 3}
       propertyPath: waterDropPool
       value: 
@@ -6388,11 +6396,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5514865634932099778, guid: 838b5eae9c8a46c439bda6892942a3f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.82
+      value: 40.72
       objectReference: {fileID: 0}
     - target: {fileID: 5514865634932099778, guid: 838b5eae9c8a46c439bda6892942a3f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.65
+      value: -2.76
       objectReference: {fileID: 0}
     - target: {fileID: 5514865634932099778, guid: 838b5eae9c8a46c439bda6892942a3f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6416,7 +6424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5514865634932099778, guid: 838b5eae9c8a46c439bda6892942a3f8, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5514865634932099778, guid: 838b5eae9c8a46c439bda6892942a3f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7431,6 +7439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4173137696028047971, guid: 73b03a4557b930349aefebc2b386aead, type: 3}
+      propertyPath: MaxDistance
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6165218183924273640, guid: 73b03a4557b930349aefebc2b386aead, type: 3}
       propertyPath: m_Name
       value: Moth Patrol (2)

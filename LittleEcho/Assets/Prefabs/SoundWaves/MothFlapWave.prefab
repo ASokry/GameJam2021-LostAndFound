@@ -47,7 +47,7 @@ MonoBehaviour:
   duration: 0.8
   checkMask:
     serializedVersion: 2
-    m_Bits: 311
+    m_Bits: 1073742080
   echoPrefab: {fileID: 7967318258726834216}
   normalSound:
   - {fileID: 0}
@@ -75,7 +75,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 1.6
   MinDistance: 1
   MaxDistance: 50
   Pan2D: 0
