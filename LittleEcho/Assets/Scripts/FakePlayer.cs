@@ -9,10 +9,10 @@ public class FakePlayer : MonoBehaviour
     private float spawnTime;
 
     [SerializeField]
-    private SoundWave flapPrefab;
+    private SoundWave flapPrefab = null;
 
     [SerializeField]
-    private SoundWave pingPrefab;
+    private SoundWave pingPrefab = null;
 
     // Start is called before the first frame update
     void Start()

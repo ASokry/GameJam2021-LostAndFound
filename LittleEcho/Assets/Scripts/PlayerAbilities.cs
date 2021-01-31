@@ -5,13 +5,28 @@ using UnityEngine;
 public class PlayerAbilities : MonoBehaviour
 {
     [SerializeField]
-    private SoundWave pingPrefab;
+    private SoundWave pingPrefab = null;
+    [SerializeField]
+    private float pingCooldown = 10;
+    private float pingTimer;
+
+    private void Start()
+    {
+        pingTimer = pingCooldown;
+    }
 
     private void Update()
     {
-        if (Input.GetButtonDown("Ping"))
+        pingTimer += Time.deltaTime;
+
+        if (pingTimer > pingCooldown)
         {
-            Instantiate(pingPrefab, transform.position, Quaternion.identity);
+            if (Input.GetButtonDown("Ping"))
+            {
+                pingTimer = 0;
+
+                Instantiate(pingPrefab, transform.position, Quaternion.identity);
+            }
         }
     }
 }

@@ -20,18 +20,24 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
 
     [SerializeField]
-    private SoundWave flapPrefab;
+    private SoundWave flapPrefab = null;
+
+    [SerializeField]
+    private float flapCooldown = 0.2F;
+    private float flapTimer;
 
     // Start is called before the first frame update
     void Start()
     {
         // Get the Rigidbody Component of the GameObject
         rb = GetComponent<Rigidbody2D>();
+
+        flapTimer = flapCooldown;
     }
 
     private void Update()
     {
-        Jump();
+        UpdateInput();
     }
 
     private void FixedUpdate()
@@ -85,17 +91,22 @@ public class PlayerController : MonoBehaviour
         transform.localScale = scalar;
     }
 
-    private void Jump()
+    private void UpdateInput()
     {
-        // Uses W/S and UP/DOWN inputs
-        if (Input.GetButtonDown("Flap"))
-        {
-            //print("jump");
-            rb.velocity = Vector2.up * flyForce;
+        flapTimer += Time.deltaTime;
 
-            Instantiate(flapPrefab, transform.position, Quaternion.identity);
+        if (flapTimer > flapCooldown)
+        {
+            // Uses W/S and UP/DOWN inputs
+            if (Input.GetButtonDown("Flap"))
+            {
+                flapTimer = 0;
+
+                rb.velocity = Vector2.up * flyForce;
+
+                Instantiate(flapPrefab, transform.position, Quaternion.identity);
+            }
         }
-        
     }
 
     private void OnDrawGizmos()
