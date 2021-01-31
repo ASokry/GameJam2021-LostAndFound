@@ -1,0 +1,2482 @@
+fileFormatVersion: 2
+guid: ff6d7d74fa357fb499e797908f5d83ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1135820575801030543
+    second: Moth Fly Sheet_0
+  - first:
+      213: 5590017540013293455
+    second: Moth Fly Sheet_1
+  - first:
+      213: 9200893272767007933
+    second: Moth Fly Sheet_2
+  - first:
+      213: -5815988317655491550
+    second: Moth Fly Sheet_3
+  - first:
+      213: 2772011229694293499
+    second: Moth Fly Sheet_4
+  - first:
+      213: -854088747110584448
+    second: Moth Fly Sheet_5
+  - first:
+      213: 4200863245207034690
+    second: Moth Fly Sheet_6
+  - first:
+      213: -6670374892452602699
+    second: Moth Fly Sheet_7
+  - first:
+      213: 5659507895966471260
+    second: Moth Fly Sheet_8
+  - first:
+      213: -1815006734407398116
+    second: Moth Fly Sheet_9
+  - first:
+      213: -9083061648320610093
+    second: Moth Fly Sheet_10
+  - first:
+      213: 4998519732734532753
+    second: Moth Fly Sheet_11
+  - first:
+      213: 2968184733671123453
+    second: Moth Fly Sheet_12
+  - first:
+      213: -6126814612672313209
+    second: Moth Fly Sheet_13
+  - first:
+      213: 4907611416587367849
+    second: Moth Fly Sheet_14
+  - first:
+      213: 7001765557708825311
+    second: Moth Fly Sheet_15
+  - first:
+      213: -7402722237966692759
+    second: Moth Fly Sheet_16
+  - first:
+      213: -8651453046335039781
+    second: Moth Fly Sheet_17
+  - first:
+      213: 6687455092915992674
+    second: Moth Fly Sheet_18
+  - first:
+      213: 2954477298880333453
+    second: Moth Fly Sheet_19
+  - first:
+      213: 1931030912497643443
+    second: Moth Fly Sheet_20
+  - first:
+      213: 8623473928527733322
+    second: Moth Fly Sheet_21
+  - first:
+      213: 7431736166543914170
+    second: Moth Fly Sheet_22
+  - first:
+      213: -3040653360197904814
+    second: Moth Fly Sheet_23
+  - first:
+      213: -2112881244553734639
+    second: Moth Fly Sheet_24
+  - first:
+      213: 3082076822485898792
+    second: Moth Fly Sheet_25
+  - first:
+      213: -4581171037634251226
+    second: Moth Fly Sheet_26
+  - first:
+      213: 6728154224620191043
+    second: Moth Fly Sheet_27
+  - first:
+      213: -792436643680874522
+    second: Moth Fly Sheet_28
+  - first:
+      213: 1612172406047554813
+    second: Moth Fly Sheet_29
+  - first:
+      213: -2541409572315960762
+    second: Moth Fly Sheet_30
+  - first:
+      213: -2084200241067188124
+    second: Moth Fly Sheet_31
+  - first:
+      213: 1943451677664442437
+    second: Moth Fly Sheet_32
+  - first:
+      213: 6490613211292592808
+    second: Moth Fly Sheet_33
+  - first:
+      213: 8685676623563217756
+    second: Moth Fly Sheet_34
+  - first:
+      213: 4161932508085458695
+    second: Moth Fly Sheet_35
+  - first:
+      213: 6171931754988473906
+    second: Moth Fly Sheet_36
+  - first:
+      213: 6653540685462767835
+    second: Moth Fly Sheet_37
+  - first:
+      213: -5223224353654626036
+    second: Moth Fly Sheet_38
+  - first:
+      213: 3446230202327087552
+    second: Moth Fly Sheet_39
+  - first:
+      213: -8799163475658974014
+    second: Moth Fly Sheet_40
+  - first:
+      213: -4047036969673512528
+    second: Moth Fly Sheet_41
+  - first:
+      213: 947720918289124848
+    second: Moth Fly Sheet_42
+  - first:
+      213: 5990519270049883245
+    second: Moth Fly Sheet_43
+  - first:
+      213: -4560084398975627052
+    second: Moth Fly Sheet_44
+  - first:
+      213: -324949117815228927
+    second: Moth Fly Sheet_45
+  - first:
+      213: 2241854691144297733
+    second: Moth Fly Sheet_46
+  - first:
+      213: -9009974150939548784
+    second: Moth Fly Sheet_47
+  - first:
+      213: -9144169611971559419
+    second: Moth Fly Sheet_48
+  - first:
+      213: -6168103233975114787
+    second: Moth Fly Sheet_49
+  - first:
+      213: -2128650630999379769
+    second: Moth Fly Sheet_50
+  - first:
+      213: -6687920674388963288
+    second: Moth Fly Sheet_51
+  - first:
+      213: -5089787410735627560
+    second: Moth Fly Sheet_52
+  - first:
+      213: 2275570059445606534
+    second: Moth Fly Sheet_53
+  - first:
+      213: 1030444454146181253
+    second: Moth Fly Sheet_54
+  - first:
+      213: 8355728962944382898
+    second: Moth Fly Sheet_55
+  - first:
+      213: -6458053112914903217
+    second: Moth Fly Sheet_56
+  - first:
+      213: -8849232291985162261
+    second: Moth Fly Sheet_57
+  - first:
+      213: -5413437399980325865
+    second: Moth Fly Sheet_58
+  - first:
+      213: 7346259222177654208
+    second: Moth Fly Sheet_59
+  - first:
+      213: -1340882358774808049
+    second: Moth Fly Sheet_60
+  - first:
+      213: -9118250431735327982
+    second: Moth Fly Sheet_61
+  - first:
+      213: -5771864791228351719
+    second: Moth Fly Sheet_62
+  - first:
+      213: 8245153378216779859
+    second: Moth Fly Sheet_63
+  - first:
+      213: 3062015085276012223
+    second: Moth Fly Sheet_64
+  - first:
+      213: 6840443226083163915
+    second: Moth Fly Sheet_65
+  - first:
+      213: -8825446478998108510
+    second: Moth Fly Sheet_66
+  - first:
+      213: -7254551596163742490
+    second: Moth Fly Sheet_67
+  - first:
+      213: 1204513308722847482
+    second: Moth Fly Sheet_68
+  - first:
+      213: 5754909034509375394
+    second: Moth Fly Sheet_69
+  - first:
+      213: 3523578355909163102
+    second: Moth Fly Sheet_70
+  - first:
+      213: 1695699239650506365
+    second: Moth Fly Sheet_71
+  - first:
+      213: -7344382197061751154
+    second: Moth Fly Sheet_72
+  - first:
+      213: -5544448293885226965
+    second: Moth Fly Sheet_73
+  - first:
+      213: -8011080389547028218
+    second: Moth Fly Sheet_74
+  - first:
+      213: 4817044719894611725
+    second: Moth Fly Sheet_75
+  - first:
+      213: -4028251435168785925
+    second: Moth Fly Sheet_76
+  - first:
+      213: 1893175455375662290
+    second: Moth Fly Sheet_77
+  - first:
+      213: -7011468158758142645
+    second: Moth Fly Sheet_78
+  - first:
+      213: 7399909769270270964
+    second: Moth Fly Sheet_79
+  - first:
+      213: 2030448181769852509
+    second: Moth Fly Sheet_80
+  - first:
+      213: 6142241371162306007
+    second: Moth Fly Sheet_81
+  - first:
+      213: -3962486247953439593
+    second: Moth Fly Sheet_82
+  - first:
+      213: -35592432779773667
+    second: Moth Fly Sheet_83
+  - first:
+      213: 142717168451302312
+    second: Moth Fly Sheet_84
+  - first:
+      213: -3919269232297913646
+    second: Moth Fly Sheet_85
+  - first:
+      213: 1538967574698265781
+    second: Moth Fly Sheet_86
+  - first:
+      213: 5272457627401542939
+    second: Moth Fly Sheet_87
+  - first:
+      213: 7745892255810865803
+    second: Moth Fly Sheet_88
+  - first:
+      213: 1954110485880518675
+    second: Moth Fly Sheet_89
+  - first:
+      213: -87962617777962310
+    second: Moth Fly Sheet_90
+  - first:
+      213: 7691158531741725810
+    second: Moth Fly Sheet_91
+  - first:
+      213: -8532495436633148115
+    second: Moth Fly Sheet_92
+  - first:
+      213: 5270317122350894629
+    second: Moth Fly Sheet_93
+  - first:
+      213: 509578016836855462
+    second: Moth Fly Sheet_94
+  - first:
+      213: 8504845112978130092
+    second: Moth Fly Sheet_95
+  - first:
+      213: -7124698763291082155
+    second: Moth Fly Sheet_96
+  - first:
+      213: 3283064850462289497
+    second: Moth Fly Sheet_97
+  - first:
+      213: 5410465341543787047
+    second: Moth Fly Sheet_98
+  - first:
+      213: -5779412834159802794
+    second: Moth Fly Sheet_99
+  - first:
+      213: 5702715876601055086
+    second: Moth Fly Sheet_100
+  - first:
+      213: 9009227084267803737
+    second: Moth Fly Sheet_101
+  - first:
+      213: -8034705432740597482
+    second: Moth Fly Sheet_102
+  - first:
+      213: 1411456316692883886
+    second: Moth Fly Sheet_103
+  - first:
+      213: -2352549225051288052
+    second: Moth Fly Sheet_104
+  - first:
+      213: 8938947636158279183
+    second: Moth Fly Sheet_105
+  - first:
+      213: -9189075087588178549
+    second: Moth Fly Sheet_106
+  - first:
+      213: 2570850479415689601
+    second: Moth Fly Sheet_107
+  - first:
+      213: 4088746572063634575
+    second: Moth Fly Sheet_108
+  - first:
+      213: 2773044058527309815
+    second: Moth Fly Sheet_109
+  - first:
+      213: -2927414412749424525
+    second: Moth Fly Sheet_110
+  - first:
+      213: 2386169314467080900
+    second: Moth Fly Sheet_111
+  - first:
+      213: -1690966475279451422
+    second: Moth Fly Sheet_112
+  - first:
+      213: 9002571199537775279
+    second: Moth Fly Sheet_113
+  - first:
+      213: -8174522993780072178
+    second: Moth Fly Sheet_114
+  - first:
+      213: 7203475863387148190
+    second: Moth Fly Sheet_115
+  - first:
+      213: -1630960300126464967
+    second: Moth Fly Sheet_116
+  - first:
+      213: 2462135264268886219
+    second: Moth Fly Sheet_117
+  - first:
+      213: -650348001422229398
+    second: Moth Fly Sheet_118
+  - first:
+      213: -4505705694030495889
+    second: Moth Fly Sheet_119
+  - first:
+      213: 2865768706679359546
+    second: Moth Fly Sheet_120
+  - first:
+      213: -6396428559028156442
+    second: Moth Fly Sheet_121
+  - first:
+      213: 7489926472407772855
+    second: Moth Fly Sheet_122
+  - first:
+      213: 7171505251190254370
+    second: Moth Fly Sheet_123
+  - first:
+      213: -2881986655185184102
+    second: Moth Fly Sheet_124
+  - first:
+      213: 6010384556805671929
+    second: Moth Fly Sheet_125
+  - first:
+      213: -4803246116847459963
+    second: Moth Fly Sheet_126
+  - first:
+      213: 2650313514043026765
+    second: Moth Fly Sheet_127
+  - first:
+      213: -2431739482050896710
+    second: Moth Fly Sheet_128
+  - first:
+      213: 1271356046692421000
+    second: Moth Fly Sheet_129
+  - first:
+      213: 6103632204621770168
+    second: Moth Fly Sheet_130
+  - first:
+      213: -3883931529469563486
+    second: Moth Fly Sheet_131
+  - first:
+      213: 1515869735404138232
+    second: Moth Fly Sheet_132
+  - first:
+      213: 858342899572933097
+    second: Moth Fly Sheet_133
+  - first:
+      213: -4424235774446223689
+    second: Moth Fly Sheet_134
+  - first:
+      213: 1452788544939716701
+    second: Moth Fly Sheet_135
+  - first:
+      213: -8357459318140669433
+    second: Moth Fly Sheet_136
+  - first:
+      213: -93239940162935502
+    second: Moth Fly Sheet_137
+  - first:
+      213: 8964309882259431773
+    second: Moth Fly Sheet_138
+  - first:
+      213: 7498624821661024748
+    second: Moth Fly Sheet_139
+  - first:
+      213: 4691206111226306324
+    second: Moth Fly Sheet_140
+  - first:
+      213: 8317776229476591389
+    second: Moth Fly Sheet_141
+  - first:
+      213: -3554156388909634912
+    second: Moth Fly Sheet_142
+  - first:
+      213: -2210459752334095317
+    second: Moth Fly Sheet_143
+  - first:
+      213: -8521455290723734404
+    second: Moth Fly Sheet_144
+  - first:
+      213: 5627322898098867004
+    second: Moth Fly Sheet_145
+  - first:
+      213: -1172962671267080512
+    second: Moth Fly Sheet_146
+  - first:
+      213: -864566163942578656
+    second: Moth Fly Sheet_147
+  - first:
+      213: -2197507043853356127
+    second: Moth Fly Sheet_148
+  - first:
+      213: -4041076541282656745
+    second: Moth Fly Sheet_149
+  - first:
+      213: 4520418882112555842
+    second: Moth Fly Sheet_150
+  - first:
+      213: -206489367408039646
+    second: Moth Fly Sheet_151
+  - first:
+      213: -2584419895093260826
+    second: Moth Fly Sheet_152
+  - first:
+      213: 701095502195311574
+    second: Moth Fly Sheet_153
+  - first:
+      213: -1420137052524647401
+    second: Moth Fly Sheet_154
+  - first:
+      213: 4650942672874827088
+    second: Moth Fly Sheet_155
+  - first:
+      213: 6379477634197549923
+    second: Moth Fly Sheet_156
+  - first:
+      213: -5331623255169334817
+    second: Moth Fly Sheet_157
+  - first:
+      213: 5345454145642790633
+    second: Moth Fly Sheet_158
+  - first:
+      213: 3284620325552001794
+    second: Moth Fly Sheet_159
+  - first:
+      213: 4422801845938990314
+    second: Moth Fly Sheet_160
+  - first:
+      213: -5225570383003389205
+    second: Moth Fly Sheet_161
+  - first:
+      213: 2653531369109224708
+    second: Moth Fly Sheet_162
+  - first:
+      213: 3326940728995259444
+    second: Moth Fly Sheet_163
+  - first:
+      213: -6544627265542006237
+    second: Moth Fly Sheet_164
+  - first:
+      213: -1204713487102239546
+    second: Moth Fly Sheet_165
+  - first:
+      213: 6485626739626882094
+    second: Moth Fly Sheet_166
+  - first:
+      213: -2137034354977258887
+    second: Moth Fly Sheet_167
+  - first:
+      213: -8937448838362816095
+    second: Moth Fly Sheet_168
+  - first:
+      213: 6561941682015725181
+    second: Moth Fly Sheet_169
+  - first:
+      213: -6361155678092805197
+    second: Moth Fly Sheet_170
+  - first:
+      213: -172865478435834491
+    second: Moth Fly Sheet_171
+  - first:
+      213: 695820441041814343
+    second: Moth Fly Sheet_172
+  - first:
+      213: -6244558854829157732
+    second: Moth Fly Sheet_173
+  - first:
+      213: 882660961939763388
+    second: Moth Fly Sheet_174
+  - first:
+      213: -5379492041979524479
+    second: Moth Fly Sheet_175
+  - first:
+      213: 2576871937100684116
+    second: Moth Fly Sheet_176
+  - first:
+      213: 8065770995996791016
+    second: Moth Fly Sheet_177
+  - first:
+      213: -5138644080309385116
+    second: Moth Fly Sheet_178
+  - first:
+      213: 1943110630865717119
+    second: Moth Fly Sheet_179
+  - first:
+      213: -3485399153800280614
+    second: Moth Fly Sheet_180
+  - first:
+      213: -8529560658071861595
+    second: Moth Fly Sheet_181
+  - first:
+      213: -569905092232333696
+    second: Moth Fly Sheet_182
+  - first:
+      213: -8947644063740719961
+    second: Moth Fly Sheet_183
+  - first:
+      213: -4751584780665593000
+    second: Moth Fly Sheet_184
+  - first:
+      213: 4862255936466663959
+    second: Moth Fly Sheet_185
+  - first:
+      213: -1334909390216200580
+    second: Moth Fly Sheet_186
+  - first:
+      213: 2446756985409461923
+    second: Moth Fly Sheet_187
+  - first:
+      213: 3224613603758763063
+    second: Moth Fly Sheet_188
+  - first:
+      213: -4341120321415148387
+    second: Moth Fly Sheet_189
+  - first:
+      213: -3871230349471783832
+    second: Moth Fly Sheet_190
+  - first:
+      213: 3067626528938935073
+    second: Moth Fly Sheet_191
+  - first:
+      213: 1719071135343128378
+    second: Moth Fly Sheet_192
+  - first:
+      213: -1049061271150827220
+    second: Moth Fly Sheet_193
+  - first:
+      213: 4541690877894519500
+    second: Moth Fly Sheet_194
+  - first:
+      213: -3156941566184205128
+    second: Moth Fly Sheet_195
+  - first:
+      213: -1269833717583405264
+    second: Moth Fly Sheet_196
+  - first:
+      213: -1381193824234929218
+    second: Moth Fly Sheet_197
+  - first:
+      213: -6461087421885810279
+    second: Moth Fly Sheet_198
+  - first:
+      213: 723470871457454514
+    second: Moth Fly Sheet_199
+  - first:
+      213: 5642399162627857130
+    second: Moth Fly Sheet_200
+  - first:
+      213: -2775627765403142567
+    second: Moth Fly Sheet_201
+  - first:
+      213: -3622610249913125988
+    second: Moth Fly Sheet_202
+  - first:
+      213: -5962922071273508039
+    second: Moth Fly Sheet_203
+  - first:
+      213: -5938519884360239163
+    second: Moth Fly Sheet_204
+  - first:
+      213: 1478280814415831199
+    second: Moth Fly Sheet_205
+  - first:
+      213: 1887079127501092192
+    second: Moth Fly Sheet_206
+  - first:
+      213: -2223526255605917442
+    second: Moth Fly Sheet_207
+  - first:
+      213: 5072867280913239369
+    second: Moth Fly Sheet_208
+  - first:
+      213: 8924795563545144537
+    second: Moth Fly Sheet_209
+  - first:
+      213: -1070120512024274882
+    second: Moth Fly Sheet_210
+  - first:
+      213: 6318861903063713790
+    second: Moth Fly Sheet_211
+  - first:
+      213: 7754023086223153842
+    second: Moth Fly Sheet_212
+  - first:
+      213: -8832482558583744447
+    second: Moth Fly Sheet_213
+  - first:
+      213: 6268844837687225196
+    second: Moth Fly Sheet_214
+  - first:
+      213: 1391975642005346809
+    second: Moth Fly Sheet_215
+  - first:
+      213: -7264192241285360349
+    second: Moth Fly Sheet_216
+  - first:
+      213: -987048940699532472
+    second: Moth Fly Sheet_217
+  - first:
+      213: 1737783387232010683
+    second: Moth Fly Sheet_218
+  - first:
+      213: -3303692279001957544
+    second: Moth Fly Sheet_219
+  - first:
+      213: 2698326696391804502
+    second: Moth Fly Sheet_220
+  - first:
+      213: 633155938028561990
+    second: Moth Fly Sheet_221
+  - first:
+      213: 7142339997035675210
+    second: Moth Fly Sheet_222
+  - first:
+      213: -9066083969876577187
+    second: Moth Fly Sheet_223
+  - first:
+      213: -5085882233015682771
+    second: Moth Fly Sheet_224
+  - first:
+      213: 350871721616543043
+    second: Moth Fly Sheet_225
+  - first:
+      213: -7869084969784692004
+    second: Moth Fly Sheet_226
+  - first:
+      213: 5589224646726938028
+    second: Moth Fly Sheet_227
+  - first:
+      213: 6252115507808469583
+    second: Moth Fly Sheet_228
+  - first:
+      213: 8515821106624492069
+    second: Moth Fly Sheet_229
+  - first:
+      213: 9053402488361802301
+    second: Moth Fly Sheet_230
+  - first:
+      213: -3560906648470982917
+    second: Moth Fly Sheet_231
+  - first:
+      213: -8762122036983457912
+    second: Moth Fly Sheet_232
+  - first:
+      213: 7791840104764292976
+    second: Moth Fly Sheet_233
+  - first:
+      213: 7713480482290366623
+    second: Moth Fly Sheet_234
+  - first:
+      213: -8153715011221973856
+    second: Moth Fly Sheet_235
+  - first:
+      213: 7244059317784757007
+    second: Moth Fly Sheet_236
+  - first:
+      213: 6390356289526807212
+    second: Moth Fly Sheet_237
+  - first:
+      213: -5213211002719302800
+    second: Moth Fly Sheet_238
+  - first:
+      213: 8316173335343246673
+    second: Moth Fly Sheet_239
+  - first:
+      213: 4110582280103975168
+    second: Moth Fly Sheet_240
+  - first:
+      213: -4010726108258325456
+    second: Moth Fly Sheet_241
+  - first:
+      213: -8182541601201449639
+    second: Moth Fly Sheet_242
+  - first:
+      213: 3081988333418224360
+    second: Moth Fly Sheet_243
+  - first:
+      213: 2796174160860551998
+    second: Moth Fly Sheet_244
+  - first:
+      213: 5046411996813789164
+    second: Moth Fly Sheet_245
+  - first:
+      213: 6432183190047719421
+    second: Moth Fly Sheet_246
+  - first:
+      213: 6356074471608266169
+    second: Moth Fly Sheet_247
+  - first:
+      213: -1392742662313520444
+    second: Moth Fly Sheet_248
+  - first:
+      213: 7966032641225776561
+    second: Moth Fly Sheet_249
+  - first:
+      213: -1584155753553168479
+    second: Moth Fly Sheet_250
+  - first:
+      213: 7122218230464854954
+    second: Moth Fly Sheet_251
+  - first:
+      213: -2979469364351252101
+    second: Moth Fly Sheet_252
+  - first:
+      213: -2850559192306466889
+    second: Moth Fly Sheet_253
+  - first:
+      213: 8417829373243038717
+    second: Moth Fly Sheet_254
+  - first:
+      213: -1184653805395480623
+    second: Moth Fly Sheet_255
+  - first:
+      213: 6636874582413598249
+    second: Moth Fly Sheet_256
+  - first:
+      213: -5275383655052430216
+    second: Moth Fly Sheet_257
+  - first:
+      213: -6441713742671843689
+    second: Moth Fly Sheet_258
+  - first:
+      213: 5260587859441024887
+    second: Moth Fly Sheet_259
+  - first:
+      213: -2143904710788361814
+    second: Moth Fly Sheet_260
+  - first:
+      213: 974168267817955649
+    second: Moth Fly Sheet_261
+  - first:
+      213: 4540595006957445189
+    second: Moth Fly Sheet_262
+  - first:
+      213: 6296212506179080814
+    second: Moth Fly Sheet_263
+  - first:
+      213: 3589572330154483667
+    second: Moth Fly Sheet_264
+  - first:
+      213: -1998548486631814112
+    second: Moth Fly Sheet_265
+  - first:
+      213: -7421141819465218636
+    second: Moth Fly Sheet_266
+  - first:
+      213: 9005822538391066898
+    second: Moth Fly Sheet_267
+  - first:
+      213: 103478437193742901
+    second: Moth Fly Sheet_268
+  - first:
+      213: -1500490950604834213
+    second: Moth Fly Sheet_269
+  - first:
+      213: -7298710843537335340
+    second: Moth Fly Sheet_270
+  - first:
+      213: -8400388906953010220
+    second: Moth Fly Sheet_271
+  - first:
+      213: 874378248916020890
+    second: Moth Fly Sheet_272
+  - first:
+      213: -4959219136711712126
+    second: Moth Fly Sheet_273
+  - first:
+      213: 7329972009905485108
+    second: Moth Fly Sheet_274
+  - first:
+      213: 4255053219019558913
+    second: Moth Fly Sheet_275
+  - first:
+      213: -1912916647936842567
+    second: Moth Fly Sheet_276
+  - first:
+      213: -7557932901562168850
+    second: Moth Fly Sheet_277
+  - first:
+      213: 4104144231817122662
+    second: Moth Fly Sheet_278
+  - first:
+      213: 9162432845859191317
+    second: Moth Fly Sheet_279
+  - first:
+      213: 1353338968850303860
+    second: Moth Fly Sheet_280
+  - first:
+      213: 4200875589786363194
+    second: Moth Fly Sheet_281
+  - first:
+      213: -1661761405467208268
+    second: Moth Fly Sheet_282
+  - first:
+      213: 5603139526183831637
+    second: Moth Fly Sheet_283
+  - first:
+      213: -571305278340865830
+    second: Moth Fly Sheet_284
+  - first:
+      213: 2177299548312096183
+    second: Moth Fly Sheet_285
+  - first:
+      213: 2668330567547253721
+    second: Moth Fly Sheet_286
+  - first:
+      213: -5857332547040686755
+    second: Moth Fly Sheet_287
+  - first:
+      213: -6792812143056821495
+    second: Moth Fly Sheet_288
+  - first:
+      213: 6400342685108788024
+    second: Moth Fly Sheet_289
+  - first:
+      213: -7659822026649163130
+    second: Moth Fly Sheet_290
+  - first:
+      213: -2914935675672015699
+    second: Moth Fly Sheet_291
+  - first:
+      213: -7935258186602749111
+    second: Moth Fly Sheet_292
+  - first:
+      213: -7654587692314707382
+    second: Moth Fly Sheet_293
+  - first:
+      213: 7448718060877458911
+    second: Moth Fly Sheet_294
+  - first:
+      213: 338421061412351383
+    second: Moth Fly Sheet_295
+  - first:
+      213: 4495319790721566805
+    second: Moth Fly Sheet_296
+  - first:
+      213: -494453463435996914
+    second: Moth Fly Sheet_297
+  - first:
+      213: 1413889310212787389
+    second: Moth Fly Sheet_298
+  - first:
+      213: 7960767736376904793
+    second: Moth Fly Sheet_299
+  - first:
+      213: -7819200874321606301
+    second: Moth Fly Sheet_300
+  - first:
+      213: 7876967077724537228
+    second: Moth Fly Sheet_301
+  - first:
+      213: 9097173624328525149
+    second: Moth Fly Sheet_302
+  - first:
+      213: 83498406384274754
+    second: Moth Fly Sheet_303
+  - first:
+      213: 1821245964201374344
+    second: Moth Fly Sheet_304
+  - first:
+      213: -8606411559095048885
+    second: Moth Fly Sheet_305
+  - first:
+      213: -4818463347070957719
+    second: Moth Fly Sheet_306
+  - first:
+      213: 7704483169267746903
+    second: Moth Fly Sheet_307
+  - first:
+      213: 7050384745581222111
+    second: Moth Fly Sheet_308
+  - first:
+      213: -5635100732917901438
+    second: Moth Fly Sheet_309
+  - first:
+      213: 370538548643627679
+    second: Moth Fly Sheet_310
+  - first:
+      213: -7418686316309906176
+    second: Moth Fly Sheet_311
+  - first:
+      213: -5632163632565420715
+    second: Moth Fly Sheet_312
+  - first:
+      213: 8570674853452665100
+    second: Moth Fly Sheet_313
+  - first:
+      213: 4915967363085847567
+    second: Moth Fly Sheet_314
+  - first:
+      213: -4709235457145176096
+    second: Moth Fly Sheet_315
+  - first:
+      213: 446908733893154259
+    second: Moth Fly Sheet_316
+  - first:
+      213: 1879414041488409374
+    second: Moth Fly Sheet_317
+  - first:
+      213: 5618239986485548584
+    second: Moth Fly Sheet_318
+  - first:
+      213: -7542862711552425729
+    second: Moth Fly Sheet_319
+  - first:
+      213: -6706747296282908142
+    second: Moth Fly Sheet_320
+  - first:
+      213: 3605989965276836628
+    second: Moth Fly Sheet_321
+  - first:
+      213: -3590755328437990299
+    second: Moth Fly Sheet_322
+  - first:
+      213: 2602693025916845743
+    second: Moth Fly Sheet_323
+  - first:
+      213: 7763202428938619908
+    second: Moth Fly Sheet_324
+  - first:
+      213: -7381027845999169698
+    second: Moth Fly Sheet_325
+  - first:
+      213: -6914628373305392160
+    second: Moth Fly Sheet_326
+  - first:
+      213: -4707904422548603988
+    second: Moth Fly Sheet_327
+  - first:
+      213: 2437332750777132132
+    second: Moth Fly Sheet_328
+  - first:
+      213: 5288984378176272676
+    second: Moth Fly Sheet_329
+  - first:
+      213: -7395224009215919021
+    second: Moth Fly Sheet_330
+  - first:
+      213: -6798455410625593460
+    second: Moth Fly Sheet_331
+  - first:
+      213: -1160645282525684464
+    second: Moth Fly Sheet_332
+  - first:
+      213: -1031833317277862001
+    second: Moth Fly Sheet_333
+  - first:
+      213: 8548455149095646896
+    second: Moth Fly Sheet_334
+  - first:
+      213: 9129091932219797697
+    second: Moth Fly Sheet_335
+  - first:
+      213: -5897749733900573549
+    second: Moth Fly Sheet_336
+  - first:
+      213: -1339187054797725934
+    second: Moth Fly Sheet_337
+  - first:
+      213: 1599895834574816467
+    second: Moth Fly Sheet_338
+  - first:
+      213: -8365216017618342823
+    second: Moth Fly Sheet_339
+  - first:
+      213: -4431067124626360484
+    second: Moth Fly Sheet_340
+  - first:
+      213: -4009792974197650192
+    second: Moth Fly Sheet_341
+  - first:
+      213: 6015752426269369158
+    second: Moth Fly Sheet_342
+  - first:
+      213: -5880598680802006806
+    second: Moth Fly Sheet_343
+  - first:
+      213: 5313507392788859468
+    second: Moth Fly Sheet_344
+  - first:
+      213: 7574621625527583455
+    second: Moth Fly Sheet_345
+  - first:
+      213: -1586679309216373039
+    second: Moth Fly Sheet_346
+  - first:
+      213: 7721350672715277308
+    second: Moth Fly Sheet_347
+  - first:
+      213: -8455999010877425863
+    second: Moth Fly Sheet_348
+  - first:
+      213: 4521216412904473328
+    second: Moth Fly Sheet_349
+  - first:
+      213: 4930825451152637914
+    second: Moth Fly Sheet_350
+  - first:
+      213: 7716078543835124815
+    second: Moth Fly Sheet_351
+  - first:
+      213: 7330720573169644303
+    second: Moth Fly Sheet_352
+  - first:
+      213: -2802774936768163402
+    second: Moth Fly Sheet_353
+  - first:
+      213: 4960374527473705320
+    second: Moth Fly Sheet_354
+  - first:
+      213: -801306392090072233
+    second: Moth Fly Sheet_355
+  - first:
+      213: 6491808722956895628
+    second: Moth Fly Sheet_356
+  - first:
+      213: 1391834203202148782
+    second: Moth Fly Sheet_357
+  - first:
+      213: -6176492253069799558
+    second: Moth Fly Sheet_358
+  - first:
+      213: 8148198245679093630
+    second: Moth Fly Sheet_359
+  - first:
+      213: -5035349213313770788
+    second: Moth Fly Sheet_360
+  - first:
+      213: 7026642592841767279
+    second: Moth Fly Sheet_361
+  - first:
+      213: -3235009792015164380
+    second: Moth Fly Sheet_362
+  - first:
+      213: -453785496581546003
+    second: Moth Fly Sheet_363
+  - first:
+      213: -8558728600339040427
+    second: Moth Fly Sheet_364
+  - first:
+      213: 5416724087141780528
+    second: Moth Fly Sheet_365
+  - first:
+      213: -3914707373347379394
+    second: Moth Fly Sheet_366
+  - first:
+      213: -7001776020971651461
+    second: Moth Fly Sheet_367
+  - first:
+      213: 7286358264426544579
+    second: Moth Fly Sheet_368
+  - first:
+      213: 3403656763783854177
+    second: Moth Fly Sheet_369
+  - first:
+      213: -4358136927740873899
+    second: Moth Fly Sheet_370
+  - first:
+      213: -3835227747461347708
+    second: Moth Fly Sheet_371
+  - first:
+      213: 3462672682259942319
+    second: Moth Fly Sheet_372
+  - first:
+      213: 5240825129218330103
+    second: Moth Fly Sheet_373
+  - first:
+      213: -7831820944501309627
+    second: Moth Fly Sheet_374
+  - first:
+      213: 2463251832866777964
+    second: Moth Fly Sheet_375
+  - first:
+      213: -629433492487054426
+    second: Moth Fly Sheet_376
+  - first:
+      213: -5677583397108913233
+    second: Moth Fly Sheet_377
+  - first:
+      213: -3409668002252322641
+    second: Moth Fly Sheet_378
+  - first:
+      213: -8482058438994895193
+    second: Moth Fly Sheet_379
+  - first:
+      213: -446931113847201390
+    second: Moth Fly Sheet_380
+  - first:
+      213: -7766763090203654681
+    second: Moth Fly Sheet_381
+  - first:
+      213: 3357249158471588934
+    second: Moth Fly Sheet_382
+  - first:
+      213: -7444940842977193912
+    second: Moth Fly Sheet_383
+  - first:
+      213: -1437670665750198126
+    second: Moth Fly Sheet_384
+  - first:
+      213: -1621567654085082523
+    second: Moth Fly Sheet_385
+  - first:
+      213: -8723227555067931194
+    second: Moth Fly Sheet_386
+  - first:
+      213: 6358406943308939180
+    second: Moth Fly Sheet_387
+  - first:
+      213: -8755602239251610573
+    second: Moth Fly Sheet_388
+  - first:
+      213: -3112937744799610427
+    second: Moth Fly Sheet_389
+  - first:
+      213: -4198578264092835818
+    second: Moth Fly Sheet_390
+  - first:
+      213: 4300310971527219960
+    second: Moth Fly Sheet_391
+  - first:
+      213: 2784713243269169765
+    second: Moth Fly Sheet_392
+  - first:
+      213: 6146533279314294609
+    second: Moth Fly Sheet_393
+  - first:
+      213: -6877819360435549158
+    second: Moth Fly Sheet_394
+  - first:
+      213: -5065781524306541033
+    second: Moth Fly Sheet_395
+  - first:
+      213: -1996000759006142144
+    second: Moth Fly Sheet_396
+  - first:
+      213: -3963933892365132717
+    second: Moth Fly Sheet_397
+  - first:
+      213: 4167047683744994801
+    second: Moth Fly Sheet_398
+  - first:
+      213: 6128470563367619386
+    second: Moth Fly Sheet_399
+  - first:
+      213: -445366427014149923
+    second: Moth Fly Sheet_400
+  - first:
+      213: 1474955066742289278
+    second: Moth Fly Sheet_401
+  - first:
+      213: 5020211679712894845
+    second: Moth Fly Sheet_402
+  - first:
+      213: 3711661534729506669
+    second: Moth Fly Sheet_403
+  - first:
+      213: 9153577431470513559
+    second: Moth Fly Sheet_404
+  - first:
+      213: 1503495701847424105
+    second: Moth Fly Sheet_405
+  - first:
+      213: 8999764740216804019
+    second: Moth Fly Sheet_406
+  - first:
+      213: 4653575279721160884
+    second: Moth Fly Sheet_407
+  - first:
+      213: -2361893264278460947
+    second: Moth Fly Sheet_408
+  - first:
+      213: 1091963418008261224
+    second: Moth Fly Sheet_409
+  - first:
+      213: 3225373362707392327
+    second: Moth Fly Sheet_410
+  - first:
+      213: 8678288969953715912
+    second: Moth Fly Sheet_411
+  - first:
+      213: -612203761753332721
+    second: Moth Fly Sheet_412
+  - first:
+      213: 706408676468401399
+    second: Moth Fly Sheet_413
+  - first:
+      213: -4770045289730690486
+    second: Moth Fly Sheet_414
+  - first:
+      213: 2355047482887850891
+    second: Moth Fly Sheet_415
+  - first:
+      213: -6249278995663856607
+    second: Moth Fly Sheet_416
+  - first:
+      213: -6283263737282328731
+    second: Moth Fly Sheet_417
+  - first:
+      213: -8767189922791632013
+    second: Moth Fly Sheet_418
+  - first:
+      213: -3179656103979278845
+    second: Moth Fly Sheet_419
+  - first:
+      213: -4710819430087463822
+    second: Moth Fly Sheet_420
+  - first:
+      213: 3502256482151154540
+    second: Moth Fly Sheet_421
+  - first:
+      213: 2185495834698117425
+    second: Moth Fly Sheet_422
+  - first:
+      213: -5639014228999238082
+    second: Moth Fly Sheet_423
+  - first:
+      213: 1506373366007978736
+    second: Moth Fly Sheet_424
+  - first:
+      213: -4499064547415897946
+    second: Moth Fly Sheet_425
+  - first:
+      213: -8334754529389266047
+    second: Moth Fly Sheet_426
+  - first:
+      213: -5029858562681140261
+    second: Moth Fly Sheet_427
+  - first:
+      213: -8840291813414045983
+    second: Moth Fly Sheet_428
+  - first:
+      213: -7632012177648057985
+    second: Moth Fly Sheet_429
+  - first:
+      213: 9099799785179702810
+    second: Moth Fly Sheet_430
+  - first:
+      213: -3568053972278769042
+    second: Moth Fly Sheet_431
+  - first:
+      213: 1357137503299236610
+    second: Moth Fly Sheet_432
+  - first:
+      213: -598435781259825507
+    second: Moth Fly Sheet_433
+  - first:
+      213: 1310506017238135795
+    second: Moth Fly Sheet_434
+  - first:
+      213: 4533138628784235790
+    second: Moth Fly Sheet_435
+  - first:
+      213: 7261827644238807833
+    second: Moth Fly Sheet_436
+  - first:
+      213: -7687631150530144022
+    second: Moth Fly Sheet_437
+  - first:
+      213: 2499350654555076301
+    second: Moth Fly Sheet_438
+  - first:
+      213: 6780257007876567488
+    second: Moth Fly Sheet_439
+  - first:
+      213: 4263433787107121267
+    second: Moth Fly Sheet_440
+  - first:
+      213: -7135149014799173786
+    second: Moth Fly Sheet_441
+  - first:
+      213: -8439236628673747197
+    second: Moth Fly Sheet_442
+  - first:
+      213: 3604721940738467975
+    second: Moth Fly Sheet_443
+  - first:
+      213: 7617410423725511243
+    second: Moth Fly Sheet_444
+  - first:
+      213: -4383023209144710542
+    second: Moth Fly Sheet_445
+  - first:
+      213: 8779933547287763793
+    second: Moth Fly Sheet_446
+  - first:
+      213: -4993165677022851008
+    second: Moth Fly Sheet_447
+  - first:
+      213: 4526980800443599289
+    second: Moth Fly Sheet_448
+  - first:
+      213: -6060641580166823191
+    second: Moth Fly Sheet_449
+  - first:
+      213: 1034615716181973510
+    second: Moth Fly Sheet_450
+  - first:
+      213: -2100587706437538567
+    second: Moth Fly Sheet_451
+  - first:
+      213: -4786927642694554472
+    second: Moth Fly Sheet_452
+  - first:
+      213: -1869596281041399265
+    second: Moth Fly Sheet_453
+  - first:
+      213: 5833871773594950307
+    second: Moth Fly Sheet_454
+  - first:
+      213: 6971336834993290910
+    second: Moth Fly Sheet_455
+  - first:
+      213: 6779735132861131057
+    second: Moth Fly Sheet_456
+  - first:
+      213: -8408903745740582683
+    second: Moth Fly Sheet_457
+  - first:
+      213: 5683132661165759648
+    second: Moth Fly Sheet_458
+  - first:
+      213: -7733343871900008650
+    second: Moth Fly Sheet_459
+  - first:
+      213: -6503827992778381528
+    second: Moth Fly Sheet_460
+  - first:
+      213: 1987055697155100576
+    second: Moth Fly Sheet_461
+  - first:
+      213: -7954526200727172716
+    second: Moth Fly Sheet_462
+  - first:
+      213: 2088113979313796797
+    second: Moth Fly Sheet_463
+  - first:
+      213: -7336454302066981608
+    second: Moth Fly Sheet_464
+  - first:
+      213: -4310188621720391454
+    second: Moth Fly Sheet_465
+  - first:
+      213: -7770121257204169269
+    second: Moth Fly Sheet_466
+  - first:
+      213: -7201958740559509985
+    second: Moth Fly Sheet_467
+  - first:
+      213: 1145791830366543869
+    second: Moth Fly Sheet_468
+  - first:
+      213: -8821738202702286522
+    second: Moth Fly Sheet_469
+  - first:
+      213: 7141008003649658237
+    second: Moth Fly Sheet_470
+  - first:
+      213: -5575921106042934327
+    second: Moth Fly Sheet_471
+  - first:
+      213: -6303531112709241115
+    second: Moth Fly Sheet_472
+  - first:
+      213: -6533843790891875164
+    second: Moth Fly Sheet_473
+  - first:
+      213: 2395655485148486544
+    second: Moth Fly Sheet_474
+  - first:
+      213: -5290294153110102728
+    second: Moth Fly Sheet_475
+  - first:
+      213: -8336774011966102329
+    second: Moth Fly Sheet_476
+  - first:
+      213: 7221208566590275904
+    second: Moth Fly Sheet_477
+  - first:
+      213: 6304874064369449799
+    second: Moth Fly Sheet_478
+  - first:
+      213: -5263951037522655878
+    second: Moth Fly Sheet_479
+  - first:
+      213: -6185215141228529018
+    second: Moth Fly Sheet_480
+  - first:
+      213: 4706099054165383396
+    second: Moth Fly Sheet_481
+  - first:
+      213: -6295925844723115250
+    second: Moth Fly Sheet_482
+  - first:
+      213: 8951880848272523405
+    second: Moth Fly Sheet_483
+  - first:
+      213: 5873167088655009178
+    second: Moth Fly Sheet_484
+  - first:
+      213: -1657571810858315485
+    second: Moth Fly Sheet_485
+  - first:
+      213: 7124342234485324738
+    second: Moth Fly Sheet_486
+  - first:
+      213: -4273048028475877365
+    second: Moth Fly Sheet_487
+  - first:
+      213: -7257860213450954492
+    second: Moth Fly Sheet_488
+  - first:
+      213: 7748334229568205790
+    second: Moth Fly Sheet_489
+  - first:
+      213: 6923827755809283927
+    second: Moth Fly Sheet_490
+  - first:
+      213: -8603697724494945146
+    second: Moth Fly Sheet_491
+  - first:
+      213: 873163729880233399
+    second: Moth Fly Sheet_492
+  - first:
+      213: 5437966272213885325
+    second: Moth Fly Sheet_493
+  - first:
+      213: -6773106971394820365
+    second: Moth Fly Sheet_494
+  - first:
+      213: -8465071086422590780
+    second: Moth Fly Sheet_495
+  - first:
+      213: -5466431160775277116
+    second: Moth Fly Sheet_496
+  - first:
+      213: 5085653810107795963
+    second: Moth Fly Sheet_497
+  - first:
+      213: 1328277095187882980
+    second: Moth Fly Sheet_498
+  - first:
+      213: -2106625716384984012
+    second: Moth Fly Sheet_499
+  - first:
+      213: -2614318811385988950
+    second: Moth Fly Sheet_500
+  - first:
+      213: -8996191351475451567
+    second: Moth Fly Sheet_501
+  - first:
+      213: -7387154267557884320
+    second: Moth Fly Sheet_502
+  - first:
+      213: 8517844598509140099
+    second: Moth Fly Sheet_503
+  - first:
+      213: 143045930805695020
+    second: Moth Fly Sheet_504
+  - first:
+      213: 2103947659444349679
+    second: Moth Fly Sheet_505
+  - first:
+      213: -2642743680542886263
+    second: Moth Fly Sheet_506
+  - first:
+      213: -8456823618201881625
+    second: Moth Fly Sheet_507
+  - first:
+      213: 4205929734582556989
+    second: Moth Fly Sheet_508
+  - first:
+      213: -3829511151633868673
+    second: Moth Fly Sheet_509
+  - first:
+      213: -6584273987357529725
+    second: Moth Fly Sheet_510
+  - first:
+      213: 6752674038783818599
+    second: Moth Fly Sheet_511
+  - first:
+      213: -7304329159049259939
+    second: Moth Fly Sheet_512
+  - first:
+      213: -780221435618181181
+    second: Moth Fly Sheet_513
+  - first:
+      213: -6118991820463688771
+    second: Moth Fly Sheet_514
+  - first:
+      213: -8567369295607273960
+    second: Moth Fly Sheet_515
+  - first:
+      213: -6084577284961934065
+    second: Moth Fly Sheet_516
+  - first:
+      213: -9085963586189962128
+    second: Moth Fly Sheet_517
+  - first:
+      213: 9150434039684688309
+    second: Moth Fly Sheet_518
+  - first:
+      213: -804158586530266165
+    second: Moth Fly Sheet_519
+  - first:
+      213: 1334886534134726217
+    second: Moth Fly Sheet_520
+  - first:
+      213: 4268440022623784890
+    second: Moth Fly Sheet_521
+  - first:
+      213: -6792323807236111242
+    second: Moth Fly Sheet_522
+  - first:
+      213: 319737987333986684
+    second: Moth Fly Sheet_523
+  - first:
+      213: 6280693045236147053
+    second: Moth Fly Sheet_524
+  - first:
+      213: 216532244966996696
+    second: Moth Fly Sheet_525
+  - first:
+      213: 3361565803980967740
+    second: Moth Fly Sheet_526
+  - first:
+      213: -6675304746016848696
+    second: Moth Fly Sheet_527
+  - first:
+      213: -107822986378511975
+    second: Moth Fly Sheet_528
+  - first:
+      213: -5425126308036628667
+    second: Moth Fly Sheet_529
+  - first:
+      213: 8933220009615232947
+    second: Moth Fly Sheet_530
+  - first:
+      213: 3737801417425856339
+    second: Moth Fly Sheet_531
+  - first:
+      213: -8835807059890795855
+    second: Moth Fly Sheet_532
+  - first:
+      213: 6446303812635140284
+    second: Moth Fly Sheet_533
+  - first:
+      213: 2184569227734833626
+    second: Moth Fly Sheet_534
+  - first:
+      213: -436737111282173579
+    second: Moth Fly Sheet_535
+  - first:
+      213: 1821697411254652180
+    second: Moth Fly Sheet_536
+  - first:
+      213: -7232718421254772143
+    second: Moth Fly Sheet_537
+  - first:
+      213: 6301662307206293565
+    second: Moth Fly Sheet_538
+  - first:
+      213: 1160527071681569001
+    second: Moth Fly Sheet_539
+  - first:
+      213: -1037913336251231605
+    second: Moth Fly Sheet_540
+  - first:
+      213: 5201978472794279651
+    second: Moth Fly Sheet_541
+  - first:
+      213: 7234264022358390318
+    second: Moth Fly Sheet_542
+  - first:
+      213: -4598838133808429129
+    second: Moth Fly Sheet_543
+  - first:
+      213: 527120341310907289
+    second: Moth Fly Sheet_544
+  - first:
+      213: 5693692694140893457
+    second: Moth Fly Sheet_545
+  - first:
+      213: -3593163619274852678
+    second: Moth Fly Sheet_546
+  - first:
+      213: -7196236445849009726
+    second: Moth Fly Sheet_547
+  - first:
+      213: 7663944154780675649
+    second: Moth Fly Sheet_548
+  - first:
+      213: 5944686580298128754
+    second: Moth Fly Sheet_549
+  - first:
+      213: -498842539745886769
+    second: Moth Fly Sheet_550
+  - first:
+      213: 6505443863092330335
+    second: Moth Fly Sheet_551
+  - first:
+      213: -2593276050037939717
+    second: Moth Fly Sheet_552
+  - first:
+      213: -5438206916023498180
+    second: Moth Fly Sheet_553
+  - first:
+      213: -6217394394243444360
+    second: Moth Fly Sheet_554
+  - first:
+      213: 1247775920550709639
+    second: Moth Fly Sheet_555
+  - first:
+      213: -8318544834053463189
+    second: Moth Fly Sheet_556
+  - first:
+      213: -7688754304232575028
+    second: Moth Fly Sheet_557
+  - first:
+      213: 4391627619567446108
+    second: Moth Fly Sheet_558
+  - first:
+      213: -8610461235562938805
+    second: Moth Fly Sheet_559
+  - first:
+      213: -8720164621672375291
+    second: Moth Fly Sheet_560
+  - first:
+      213: 7735084177532353214
+    second: Moth Fly Sheet_561
+  - first:
+      213: 332254345796855568
+    second: Moth Fly Sheet_562
+  - first:
+      213: 1720008584449942422
+    second: Moth Fly Sheet_563
+  - first:
+      213: 5364315964522502260
+    second: Moth Fly Sheet_564
+  - first:
+      213: -3079946559236772270
+    second: Moth Fly Sheet_565
+  - first:
+      213: 2529901057238304840
+    second: Moth Fly Sheet_566
+  - first:
+      213: -5609592972121528120
+    second: Moth Fly Sheet_567
+  - first:
+      213: -8112861756007897156
+    second: Moth Fly Sheet_568
+  - first:
+      213: 7459853128703938854
+    second: Moth Fly Sheet_569
+  - first:
+      213: 5604470245752893383
+    second: Moth Fly Sheet_570
+  - first:
+      213: 8887850812587297776
+    second: Moth Fly Sheet_571
+  - first:
+      213: 6767384598584579284
+    second: Moth Fly Sheet_572
+  - first:
+      213: 7421969872508720429
+    second: Moth Fly Sheet_573
+  - first:
+      213: -4186471559763607346
+    second: Moth Fly Sheet_574
+  - first:
+      213: -4964555197908367152
+    second: Moth Fly Sheet_575
+  - first:
+      213: -7795380813145563075
+    second: Moth Fly Sheet_576
+  - first:
+      213: -6153445773334114177
+    second: Moth Fly Sheet_577
+  - first:
+      213: 8252948505722593035
+    second: Moth Fly Sheet_578
+  - first:
+      213: -5752424086950521262
+    second: Moth Fly Sheet_579
+  - first:
+      213: -6919685543610383765
+    second: Moth Fly Sheet_580
+  - first:
+      213: 5071914628863849488
+    second: Moth Fly Sheet_581
+  - first:
+      213: 6878565948682044506
+    second: Moth Fly Sheet_582
+  - first:
+      213: 7517945267575126834
+    second: Moth Fly Sheet_583
+  - first:
+      213: -3202936027075629766
+    second: Moth Fly Sheet_584
+  - first:
+      213: -7905675144152638192
+    second: Moth Fly Sheet_585
+  - first:
+      213: -7000047820076431591
+    second: Moth Fly Sheet_586
+  - first:
+      213: -3828926747653473358
+    second: Moth Fly Sheet_587
+  - first:
+      213: -3771665412234892286
+    second: Moth Fly Sheet_588
+  - first:
+      213: -2643086097248847353
+    second: Moth Fly Sheet_589
+  - first:
+      213: -5449211516653970309
+    second: Moth Fly Sheet_590
+  - first:
+      213: 4288192473238998994
+    second: Moth Fly Sheet_591
+  - first:
+      213: -342863911846086486
+    second: Moth Fly Sheet_592
+  - first:
+      213: -8718154592895809981
+    second: Moth Fly Sheet_593
+  - first:
+      213: 3448885693314816265
+    second: Moth Fly Sheet_594
+  - first:
+      213: -9197739084803408125
+    second: Moth Fly Sheet_595
+  - first:
+      213: 7449171975231968754
+    second: Moth Fly Sheet_596
+  - first:
+      213: -4125816631747445584
+    second: Moth Fly Sheet_597
+  - first:
+      213: 4241305401011728880
+    second: Moth Fly Sheet_598
+  - first:
+      213: -4156365863084589191
+    second: Moth Fly Sheet_599
+  - first:
+      213: 4632730543913240619
+    second: Moth Fly Sheet_600
+  - first:
+      213: -4773246040733043564
+    second: Moth Fly Sheet_601
+  - first:
+      213: 1070798322975280857
+    second: Moth Fly Sheet_602
+  - first:
+      213: -1635704187694020088
+    second: Moth Fly Sheet_603
+  - first:
+      213: -7796205178313441205
+    second: Moth Fly Sheet_604
+  - first:
+      213: -5494883543360846151
+    second: Moth Fly Sheet_605
+  - first:
+      213: -7444928643243188643
+    second: Moth Fly Sheet_606
+  - first:
+      213: -4567567172570880492
+    second: Moth Fly Sheet_607
+  - first:
+      213: -8221728999907537733
+    second: Moth Fly Sheet_608
+  - first:
+      213: 2104835227317016976
+    second: Moth Fly Sheet_609
+  - first:
+      213: -2661303427701441923
+    second: Moth Fly Sheet_610
+  - first:
+      213: 2826712724692839404
+    second: Moth Fly Sheet_611
+  - first:
+      213: -2345774242949301218
+    second: Moth Fly Sheet_612
+  - first:
+      213: 4839539018177279104
+    second: Moth Fly Sheet_613
+  - first:
+      213: -8492667566776179390
+    second: Moth Fly Sheet_614
+  - first:
+      213: -8400962728461167563
+    second: Moth Fly Sheet_615
+  - first:
+      213: 754267281192417068
+    second: Moth Fly Sheet_616
+  - first:
+      213: -859298344746742948
+    second: Moth Fly Sheet_617
+  - first:
+      213: 8574049714220628856
+    second: Moth Fly Sheet_618
+  - first:
+      213: 1206051070392587653
+    second: Moth Fly Sheet_619
+  - first:
+      213: -1252711534158756070
+    second: Moth Fly Sheet_620
+  - first:
+      213: -7517588194332448729
+    second: Moth Fly Sheet_621
+  - first:
+      213: -4920109734111220231
+    second: Moth Fly Sheet_622
+  - first:
+      213: 7885067332231282862
+    second: Moth Fly Sheet_623
+  - first:
+      213: 3703150868991088697
+    second: Moth Fly Sheet_624
+  - first:
+      213: -629670907480403161
+    second: Moth Fly Sheet_625
+  - first:
+      213: 3088510168906894277
+    second: Moth Fly Sheet_626
+  - first:
+      213: 1745544129857447143
+    second: Moth Fly Sheet_627
+  - first:
+      213: 7555786105487946656
+    second: Moth Fly Sheet_628
+  - first:
+      213: 4983358947871840454
+    second: Moth Fly Sheet_629
+  - first:
+      213: 6959183202062355514
+    second: Moth Fly Sheet_630
+  - first:
+      213: -8109674180575959631
+    second: Moth Fly Sheet_631
+  - first:
+      213: -1525997134470245570
+    second: Moth Fly Sheet_632
+  - first:
+      213: 4115819725430547400
+    second: Moth Fly Sheet_633
+  - first:
+      213: 1163294976791897641
+    second: Moth Fly Sheet_634
+  - first:
+      213: 1559406397171677571
+    second: Moth Fly Sheet_635
+  - first:
+      213: -4063088208276345323
+    second: Moth Fly Sheet_636
+  - first:
+      213: 2111592568751942042
+    second: Moth Fly Sheet_637
+  - first:
+      213: 1671765628506255276
+    second: Moth Fly Sheet_638
+  - first:
+      213: 3621774317106484919
+    second: Moth Fly Sheet_639
+  - first:
+      213: -4636697728817528323
+    second: Moth Fly Sheet_640
+  - first:
+      213: 4582080705704479546
+    second: Moth Fly Sheet_641
+  - first:
+      213: -3843475669867796907
+    second: Moth Fly Sheet_642
+  - first:
+      213: 4798710836090024238
+    second: Moth Fly Sheet_643
+  - first:
+      213: -9117612895578820418
+    second: Moth Fly Sheet_644
+  - first:
+      213: 5882244924182688687
+    second: Moth Fly Sheet_645
+  - first:
+      213: 8422796834085753706
+    second: Moth Fly Sheet_646
+  - first:
+      213: -6420828161512024536
+    second: Moth Fly Sheet_647
+  - first:
+      213: 2212283814451053470
+    second: Moth Fly Sheet_648
+  - first:
+      213: 5788616242644155317
+    second: Moth Fly Sheet_649
+  - first:
+      213: 4766163972736150292
+    second: Moth Fly Sheet_650
+  - first:
+      213: 1821805846481210975
+    second: Moth Fly Sheet_651
+  - first:
+      213: 1450041931318818382
+    second: Moth Fly Sheet_652
+  - first:
+      213: 604472954028946469
+    second: Moth Fly Sheet_653
+  - first:
+      213: -9200863957954484215
+    second: Moth Fly Sheet_654
+  - first:
+      213: 766822188214195894
+    second: Moth Fly Sheet_655
+  - first:
+      213: -618568886796764504
+    second: Moth Fly Sheet_656
+  - first:
+      213: -4231766520869263963
+    second: Moth Fly Sheet_657
+  - first:
+      213: -2282231413799666818
+    second: Moth Fly Sheet_658
+  - first:
+      213: 6692438774668691141
+    second: Moth Fly Sheet_659
+  - first:
+      213: 8882769698372127976
+    second: Moth Fly Sheet_660
+  - first:
+      213: 5556941619897102574
+    second: Moth Fly Sheet_661
+  - first:
+      213: -1648751836254244564
+    second: Moth Fly Sheet_662
+  - first:
+      213: 3171588576433307101
+    second: Moth Fly Sheet_663
+  - first:
+      213: -6432222280831956789
+    second: Moth Fly Sheet_664
+  - first:
+      213: 2737194735648677466
+    second: Moth Fly Sheet_665
+  - first:
+      213: -8411649710563708496
+    second: Moth Fly Sheet_666
+  - first:
+      213: -2816987857392944705
+    second: Moth Fly Sheet_667
+  - first:
+      213: -3275594902056691301
+    second: Moth Fly Sheet_668
+  - first:
+      213: 556296546297966548
+    second: Moth Fly Sheet_669
+  - first:
+      213: 3740044352109935445
+    second: Moth Fly Sheet_670
+  - first:
+      213: -6657291278445588018
+    second: Moth Fly Sheet_671
+  - first:
+      213: 3372587085391357338
+    second: Moth Fly Sheet_672
+  - first:
+      213: -3851000334199507786
+    second: Moth Fly Sheet_673
+  - first:
+      213: 1764021701474124013
+    second: Moth Fly Sheet_674
+  - first:
+      213: -8776729639459083167
+    second: Moth Fly Sheet_675
+  - first:
+      213: -8212489295812445720
+    second: Moth Fly Sheet_676
+  - first:
+      213: -5172590163891081674
+    second: Moth Fly Sheet_677
+  - first:
+      213: -6670260067458058338
+    second: Moth Fly Sheet_678
+  - first:
+      213: -9222593184211944410
+    second: Moth Fly Sheet_679
+  - first:
+      213: -6252099421522570869
+    second: Moth Fly Sheet_680
+  - first:
+      213: 1160553430134599991
+    second: Moth Fly Sheet_681
+  - first:
+      213: 4271874682108261578
+    second: Moth Fly Sheet_682
+  - first:
+      213: 1531331077669823996
+    second: Moth Fly Sheet_683
+  - first:
+      213: 3436037301263237302
+    second: Moth Fly Sheet_684
+  - first:
+      213: -3788929602544877890
+    second: Moth Fly Sheet_685
+  - first:
+      213: -1300967964346444155
+    second: Moth Fly Sheet_686
+  - first:
+      213: -2997649958631742343
+    second: Moth Fly Sheet_687
+  - first:
+      213: 7026174748112853943
+    second: Moth Fly Sheet_688
+  - first:
+      213: 273814997522059537
+    second: Moth Fly Sheet_689
+  - first:
+      213: -4587320491502048200
+    second: Moth Fly Sheet_690
+  - first:
+      213: -963923773101393640
+    second: Moth Fly Sheet_691
+  - first:
+      213: -563654526793695332
+    second: Moth Fly Sheet_692
+  - first:
+      213: 3450705593707277345
+    second: Moth Fly Sheet_693
+  - first:
+      213: -4306672887830256991
+    second: Moth Fly Sheet_694
+  - first:
+      213: 8920085917700180540
+    second: Moth Fly Sheet_695
+  - first:
+      213: -1113382358767966851
+    second: Moth Fly Sheet_696
+  - first:
+      213: -5324864932064035887
+    second: Moth Fly Sheet_697
+  - first:
+      213: 6762851991575457507
+    second: Moth Fly Sheet_698
+  - first:
+      213: -8957491315923139044
+    second: Moth Fly Sheet_699
+  - first:
+      213: -7463845542444143644
+    second: Moth Fly Sheet_700
+  - first:
+      213: -2373794209096546237
+    second: Moth Fly Sheet_701
+  - first:
+      213: 1529545696562591070
+    second: Moth Fly Sheet_702
+  - first:
+      213: -2079704759509769214
+    second: Moth Fly Sheet_703
+  - first:
+      213: -9003008036381582314
+    second: Moth Fly Sheet_704
+  - first:
+      213: -3244753954801693621
+    second: Moth Fly Sheet_705
+  - first:
+      213: 469080946021354166
+    second: Moth Fly Sheet_706
+  - first:
+      213: 43766526547267753
+    second: Moth Fly Sheet_707
+  - first:
+      213: -1991078026120011205
+    second: Moth Fly Sheet_708
+  - first:
+      213: -2707082247101126027
+    second: Moth Fly Sheet_709
+  - first:
+      213: 2410408905997288053
+    second: Moth Fly Sheet_710
+  - first:
+      213: 5470945749891258938
+    second: Moth Fly Sheet_711
+  - first:
+      213: -2972544405257425455
+    second: Moth Fly Sheet_712
+  - first:
+      213: 8795136615857976305
+    second: Moth Fly Sheet_713
+  - first:
+      213: -5124884573142670270
+    second: Moth Fly Sheet_714
+  - first:
+      213: 2978773220262833500
+    second: Moth Fly Sheet_715
+  - first:
+      213: -1940445256903961859
+    second: Moth Fly Sheet_716
+  - first:
+      213: -6323832635621053570
+    second: Moth Fly Sheet_717
+  - first:
+      213: 2882569878727389488
+    second: Moth Fly Sheet_718
+  - first:
+      213: -1279674930298083747
+    second: Moth Fly Sheet_719
+  - first:
+      213: 5909005540699023859
+    second: Moth Fly Sheet_720
+  - first:
+      213: -9126086151012418623
+    second: Moth Fly Sheet_721
+  - first:
+      213: -2444020291671253906
+    second: Moth Fly Sheet_722
+  - first:
+      213: -4948022283030195
+    second: Moth Fly Sheet_723
+  - first:
+      213: 7479729840309564957
+    second: Moth Fly Sheet_724
+  - first:
+      213: -6354749093850649337
+    second: Moth Fly Sheet_725
+  - first:
+      213: 4123413462427596118
+    second: Moth Fly Sheet_726
+  - first:
+      213: -5230022208776886169
+    second: Moth Fly Sheet_727
+  - first:
+      213: 5718880397264976115
+    second: Moth Fly Sheet_728
+  - first:
+      213: 1310624242745283051
+    second: Moth Fly Sheet_729
+  - first:
+      213: 6889260181080766923
+    second: Moth Fly Sheet_730
+  - first:
+      213: -8333037221160362418
+    second: Moth Fly Sheet_731
+  - first:
+      213: 8013533720522324149
+    second: Moth Fly Sheet_732
+  - first:
+      213: -6391378217810301297
+    second: Moth Fly Sheet_733
+  - first:
+      213: -8795938476880270159
+    second: Moth Fly Sheet_734
+  - first:
+      213: -9065567490682923358
+    second: Moth Fly Sheet_735
+  - first:
+      213: 8880766363871381674
+    second: Moth Fly Sheet_736
+  - first:
+      213: -106471460585540042
+    second: Moth Fly Sheet_737
+  - first:
+      213: 3629139967712800510
+    second: Moth Fly Sheet_738
+  - first:
+      213: 7189181325016611522
+    second: Moth Fly Sheet_739
+  - first:
+      213: 2921722407085148532
+    second: Moth Fly Sheet_740
+  - first:
+      213: 1693934428418712484
+    second: Moth Fly Sheet_741
+  - first:
+      213: 7392978176387651918
+    second: Moth Fly Sheet_742
+  - first:
+      213: -6716344860071213201
+    second: Moth Fly Sheet_743
+  - first:
+      213: -560110818280804445
+    second: Moth Fly Sheet_744
+  - first:
+      213: -2148201448646931407
+    second: Moth Fly Sheet_745
+  - first:
+      213: -1539372368491846705
+    second: Moth Fly Sheet_746
+  - first:
+      213: 4870185037975335528
+    second: Moth Fly Sheet_747
+  - first:
+      213: -192523165158743838
+    second: Moth Fly Sheet_748
+  - first:
+      213: -7989829892316960191
+    second: Moth Fly Sheet_749
+  - first:
+      213: -454051105759874697
+    second: Moth Fly Sheet_750
+  - first:
+      213: -1356028973805505336
+    second: Moth Fly Sheet_751
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Moth Fly Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87333dbbce33cf00800000000000000
+      internalID: 1135820575801030543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moth Fly Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ff1b0e55bb39d40800000000000000
+      internalID: 5590017540013293455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moth Fly Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc0f83eea320bf70800000000000000
+      internalID: 9200893272767007933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moth Fly Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c92548075794fa0800000000000000
+      internalID: -5815988317655491550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
