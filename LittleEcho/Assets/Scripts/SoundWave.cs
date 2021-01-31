@@ -36,9 +36,10 @@ public class SoundWave : MonoBehaviour
     [Header("Audio Settings")]
     // Audio to play when spawned or echod
     [SerializeField]
-    private AudioClip normalSound = null;
+    private AudioClip[] normalSound = null;
     [SerializeField]
-    private AudioClip echoSound = null;
+    private AudioClip[] echoSound = null;
+    private int soundVariant = -1;
 
     [Header("Visual Settings")]
     [SerializeField]
@@ -93,7 +94,9 @@ public class SoundWave : MonoBehaviour
         this.iteration = iteration;
         source.volume *= AudioVolumePerIteration(iteration);
         source.pitch *= AudioPitchPerIteration(iteration);
-        source.clip = iteration == 0 ? normalSound : echoSound;
+        // Pick a particular sound variant
+        soundVariant = soundVariant == - 1 ? Random.Range(0, normalSound.Length) : soundVariant;
+        source.clip = iteration == 0 ? normalSound[soundVariant] : echoSound[soundVariant];
     }
 
     public void Init(float duration)
