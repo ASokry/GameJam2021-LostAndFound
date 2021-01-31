@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-
-    [SerializeField] private int health;
+    private int health;
+    [SerializeField]
     private int maxHealth = 100;
 
+    [SerializeField]
+    private float invulnDuration = 0.5F;
+    private float invulnTimer;
+
     public HealthBar healthBar;
+
+    public SoundWave damageSoundWave;
 
     private void Start()
     {
@@ -16,14 +22,25 @@ public class Health : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
+    private void Update()
+    {
+        invulnTimer -= Time.deltaTime;
+    }
+
     public void TakeDamage(int damage)
     {
+        if (invulnTimer > 0)
+            return;
+        invulnTimer = invulnDuration;
+
         health -= damage;
         healthBar.SetHealth(health);
 
-        if (health <=0)
+        Instantiate(damageSoundWave, transform.position, Quaternion.identity);
+
+        if (health <= 0)
         {
-            // do something
+            // Do something
             GameManager.Instance.ChangeState(GameManager.GameState.GameOver, 1);
         }
     }
@@ -32,8 +49,8 @@ public class Health : MonoBehaviour
     {
         this.health += health;
 
-        if (this.health >= 100)
-            this.health = 100;
+        if (this.health >= maxHealth)
+            this.health = maxHealth;
 
         healthBar.SetHealth(health);
     }
