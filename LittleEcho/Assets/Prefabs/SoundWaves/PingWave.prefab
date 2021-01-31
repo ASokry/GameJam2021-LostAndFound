@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7967318258726834216}
   - component: {fileID: 5188365601558599276}
   m_Layer: 0
-  m_Name: FlapWave
+  m_Name: PingWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,16 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518630de0a1e7f64da2e32f53bbc2296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 1
+  duration: 8
   checkMask:
     serializedVersion: 2
     m_Bits: 311
   echoPrefab: {fileID: 7967318258726834216}
-  normalSound: {fileID: 8300000, guid: c94dce4a816e1f34ba946167c7e4e096, type: 3}
-  echoSound: {fileID: 0}
-  thickness: 2
-  normalColor: {r: 0.8113208, g: 0.7694953, b: 0.69268423, a: 1}
-  echoColor: {r: 0, g: 0, b: 0, a: 0.5019608}
+  normalSound:
+  - {fileID: 8300000, guid: c66d75b7575423c47b05874e2e923761, type: 3}
+  echoSound:
+  - {fileID: 8300000, guid: 4dc30c1035954814b93978003170284d, type: 3}
+  thickness: 3
+  normalColor: {r: 0, g: 1, b: 1, a: 1}
+  echoColor: {r: 0, g: 0, b: 1, a: 0.2509804}
 --- !u!82 &5188365601558599276
 AudioSource:
   m_ObjectHideFlags: 0
@@ -66,7 +68,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
