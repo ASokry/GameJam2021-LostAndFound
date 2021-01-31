@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(AudioSource))]
 public class MainMenu : MonoBehaviour
 {
     [Header("Menus")]
@@ -14,10 +15,18 @@ public class MainMenu : MonoBehaviour
     [SerializeField] Slider musicVolume;
     [SerializeField] Slider sfxVolume;
 
+    [Header("Sound")]
+    [SerializeField] AudioClip clickButtonSound;
+    [SerializeField] AudioClip hoverButtonSound;
+    [SerializeField] AudioClip startMenuSound;
+    private AudioSource audioSource;
+
     protected virtual void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         InitiateMenus();
         InitiateSettings();
+        audioSource.PlayOneShot(startMenuSound);
     }
 
     protected virtual void InitiateMenus()
@@ -63,5 +72,13 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void PlayClickSound()
+    {
+        audioSource.PlayOneShot(clickButtonSound);
+    }
 
+    public void PlayHoverSound()
+    {
+        audioSource.PlayOneShot(hoverButtonSound);
+    }
 }
