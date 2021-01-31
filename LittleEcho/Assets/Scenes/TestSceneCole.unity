@@ -677,6 +677,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1412625249, guid: 5695fc778520b0e45acc8a6d6939d109, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4330231094849033780, guid: 5695fc778520b0e45acc8a6d6939d109, type: 3}
       propertyPath: m_Name
       value: Player Bat
@@ -991,6 +995,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  flapPrefab: {fileID: 0}
+  flapCooldown: 0.2
 --- !u!1 &2128112611
 GameObject:
   m_ObjectHideFlags: 0
