@@ -16,7 +16,8 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
         if (instance != null)
         {
-            Debug.LogError("[Singleton] You're tring to create another instance of " + instance);
+            //Debug.LogError("[Singleton] You're tring to create another instance of " + instance);
+            Destroy(this.gameObject);
         }
         else
         {
