@@ -20,11 +20,12 @@ public class EnemyController : MonoBehaviour
 
     public Transform[] movePoints;
     private int nextPoint = 0;
-    
+
     private float speed;
-    private float minSpeed = 5f;
-    private float maxSpeed = 100f;
-    public float theSpeed;
+    public float minSpeed = 1f;
+    public float maxSpeed = 3f;
+    public float rate = 0.01f;
+    [SerializeField] private float theSpeed;
 
     private bool traverseUp = true;
     public float timeBetweenMove = 4f;
@@ -83,19 +84,19 @@ public class EnemyController : MonoBehaviour
     void Moving(Transform target)
     {
         state = MothStates.MOVING;
-        
+
         //Vector3 dir = (this.transform.position - target.position).normalized;
         //rb.AddForce(dir);
 
         if (Vector2.Distance(transform.position, target.position) <= Vector2.Distance(startPos, target.position)/2)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, theSpeed * Time.deltaTime);
-            speed -= 2*Time.deltaTime;
+            speed -= rate;
         }
         else
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, theSpeed * Time.deltaTime);
-            speed += 2*Time.deltaTime;
+            speed += rate;
         }
 
         if (Vector2.Distance(transform.position, target.position) <= 0.01f)
