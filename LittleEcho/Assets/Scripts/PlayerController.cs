@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
 
     [SerializeField]
-    private SoundWave flapPrefab;
+    private SoundWave flapPrefab = null;
 
     [SerializeField]
     private float flapCooldown = 0.2F;

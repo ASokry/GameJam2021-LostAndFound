@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class SoundPoint
 {
-    [SerializeField]
-    private int numberOfPoints; // How many points does this sound wave consist of initially
-
+    // The sound wave that manages this point
     private SoundWave parent;
 
+    // Emulate Transform data
     public Vector3 position;
-
     public Quaternion direction;
 
+    // Marked at spawn time to either trigger an echo or not
     public bool spawnsEcho = false;
 
+    // Has this sound point hit something and stopped simulating
     public bool stopped = false;
 
     public SoundPoint(SoundWave parent, Vector2 position, Quaternion direction, bool spawnsEcho)
@@ -25,6 +25,9 @@ public class SoundPoint
         this.spawnsEcho = spawnsEcho;
     }
 
+    /// <summary>
+    /// Called when this sound point hits something
+    /// </summary>
     void Stop()
     {
         stopped = true;
@@ -33,41 +36,38 @@ public class SoundPoint
             parent.SpawnEcho(this);
     }
 
-    public void Tick(float deltaTime)
+    /// <summary>
+    /// Simulates this sound point for one time step. Usually called in an "Update" function
+    /// </summary>
+    /// <param name="timeStep"></param>
+    public void Tick(float timeStep)
     {
         if (!stopped)
         {
-            MoveForward(deltaTime);
-            CheckForward(deltaTime);
-        }
+            MoveForward(timeStep);
 
-        float length = 0.1F;
-        Debug.DrawRay(position - Vector3.up * length, Vector3.up * length * 2, Color.black, deltaTime);
-        Debug.DrawRay(position - Vector3.right * length, Vector3.right * length * 2, Color.black, deltaTime);
+            if (CheckForward(timeStep))
+                Stop();
+        }
     }
 
-    void MoveForward(float deltaTime)
+    /// <summary>
+    /// Advances this sound point forward along its path, given a time step
+    /// </summary>
+    /// <param name="timeStep"></param>
+    void MoveForward(float timeStep)
     {
-        position += direction * Vector3.right * deltaTime * SoundWave.WAVE_SPEED;
+        position += direction * Vector3.right * timeStep * SoundWave.WAVE_SPEED;
     }
 
-    public bool CheckForward(float deltaTime)
+    /// <summary>
+    /// Looks ahead along this sound point's path, given a time step, and returns if it hit something
+    /// </summary>
+    /// <param name="timeStep"></param>
+    public bool CheckForward(float timeStep)
     {
-        RaycastHit2D hit = Physics2D.Raycast(position, direction * Vector3.right, SoundWave.WAVE_SPEED * deltaTime, parent.checkMask);
+        RaycastHit2D hit = Physics2D.Raycast(position, direction * Vector3.right, SoundWave.WAVE_SPEED * timeStep, parent.checkMask);
 
-        if (hit.collider != null)
-        {
-            Stop();
-
-            //// Impact sparks
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    Debug.DrawRay(hit.point, Random.insideUnitSphere * 0.5F, Color.white, Random.value * 1F);
-            //}
-
-            return true;
-        }
-        else
-            return false;
+        return hit.collider != null;
     }
 }
