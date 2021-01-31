@@ -5,11 +5,6 @@ using UnityEngine;
 public class PauseMenu : MainMenu
 {
 
-    protected new void Awake()
-    {
-        //do nothing
-    }
-
     protected override void Start()
     {
         base.Start();
