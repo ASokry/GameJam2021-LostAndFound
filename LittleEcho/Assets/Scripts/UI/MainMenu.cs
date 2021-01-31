@@ -29,6 +29,11 @@ public class MainMenu : MonoBehaviour
         audioSource.PlayOneShot(startMenuSound);
     }
 
+    protected virtual void OnEnable()
+    {
+        audioSource.PlayOneShot(startMenuSound);
+    }    
+
     protected virtual void InitiateMenus()
     {
         StartMenu.SetActive(true);
