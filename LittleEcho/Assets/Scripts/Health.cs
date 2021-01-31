@@ -23,8 +23,9 @@ public class Health : MonoBehaviour
 
         if (health <=0)
         {
-            // do something
-            GameManager.Instance.ChangeState(GameManager.GameState.GameOver, 1);
+            // Load lose menu and change state to GameOver
+            GameManager.Instance.LoadScene("LoseMenu", GameManager.GameState.GameOver);
+            //GameManager.Instance.ChangeState(GameManager.GameState.GameOver, 1);
         }
     }
 

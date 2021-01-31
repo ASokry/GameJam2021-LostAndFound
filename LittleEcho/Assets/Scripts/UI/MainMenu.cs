@@ -77,6 +77,11 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void GoToMenu()
+    {
+        GameManager.Instance.LoadScene("MainMenu", GameManager.GameState.MainMenu);
+    }
+
     public void PlayClickSound()
     {
         audioSource.PlayOneShot(clickButtonSound);
