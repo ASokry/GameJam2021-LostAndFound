@@ -74,7 +74,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
 
-        GameManager.Instance.LoadScene("Level_test_1", GameManager.GameState.Playing);
+        GameManager.Instance.LoadScene("Level_1", GameManager.GameState.Playing);
     }
 
     public void QuitGame()
