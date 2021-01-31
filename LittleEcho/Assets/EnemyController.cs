@@ -22,8 +22,8 @@ public class EnemyController : MonoBehaviour
     private int nextPoint = 0;
     
     private float speed;
-    private float minSpeed = 1f;
-    private float maxSpeed = 10f;
+    private float minSpeed = 5f;
+    private float maxSpeed = 100f;
     public float theSpeed;
 
     private bool traverseUp = true;
@@ -41,11 +41,11 @@ public class EnemyController : MonoBehaviour
             Debug.LogError("No Move Points");
         }
         moveCountdown = timeBetweenMove;
-        theSpeed = Mathf.Clamp(speed, minSpeed, maxSpeed);
     }
 
     private void Update()
     {
+        theSpeed = Mathf.Clamp(speed, minSpeed, maxSpeed);
         // Check if the movePoints array is not empty
         if (movePoints.Length >= 2)
         {
@@ -90,14 +90,13 @@ public class EnemyController : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) <= Vector2.Distance(startPos, target.position)/2)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, theSpeed * Time.deltaTime);
-            speed -= Time.deltaTime;
+            speed -= 2*Time.deltaTime;
         }
         else
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, theSpeed * Time.deltaTime);
-            speed += Time.deltaTime;
+            speed += 2*Time.deltaTime;
         }
-        print(speed);
 
         if (Vector2.Distance(transform.position, target.position) <= 0.01f)
         {
@@ -130,6 +129,7 @@ public class EnemyController : MonoBehaviour
                 // Iterate up to next index
                 nextPoint++;
                 state = MothStates.IDLE;
+                speed = minSpeed;
                 startPos = transform.position;
             }
             else
@@ -146,6 +146,7 @@ public class EnemyController : MonoBehaviour
                 // Iterate down to next index
                 nextPoint--;
                 state = MothStates.IDLE;
+                speed = minSpeed;
                 startPos = transform.position;
             }
             else
