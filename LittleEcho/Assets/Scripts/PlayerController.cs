@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private float moveInput;
+    private Transform playerArt;
 
     // Movement Variables
     public bool facingRight = true;
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         flapTimer = flapCooldown;
+        playerArt = GameObject.FindGameObjectWithTag("Player Art").transform;
     }
 
     private void Update()
@@ -91,12 +93,12 @@ public class PlayerController : MonoBehaviour
     void Flip()
     {
         facingRight = !facingRight;
-        // Get local scale of GameObject
-        Vector3 scalar = transform.localScale;
+        // Get local scale of Art GameObject
+        Vector3 scalar = playerArt.localScale;
         // Reverse the scale
         scalar.x *= -1;
         // Assign the local scale to new scale
-        transform.localScale = scalar;
+        playerArt.localScale = scalar;
     }
 
     private void UpdateInput()
