@@ -12,14 +12,20 @@ public class EnemyController : MonoBehaviour
         This is not too imporatnt, but it would be good to place the Moth object at the first move point
     */
 
+    private Rigidbody2D rb;
     public enum MothStates { IDLE, MOVING, CHOOSING };
     public MothStates state = MothStates.IDLE;
     private bool facingRight = true;
-    private Vector2 currentPos;
+    private Vector2 startPos;
 
     public Transform[] movePoints;
     private int nextPoint = 0;
-    public float speed;
+    
+    private float speed;
+    private float minSpeed = 1f;
+    private float maxSpeed = 10f;
+    public float theSpeed;
+
     private bool traverseUp = true;
     public float timeBetweenMove = 4f;
     private float moveCountdown;
@@ -27,13 +33,15 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentPos = transform.position;
+        rb = GetComponent<Rigidbody2D>();
+        startPos = transform.position;
         // Throws Error if the movePoints Array is less than 2
         if (movePoints.Length < 2)
         {
             Debug.LogError("No Move Points");
         }
         moveCountdown = timeBetweenMove;
+        theSpeed = Mathf.Clamp(speed, minSpeed, maxSpeed);
     }
 
     private void Update()
@@ -60,12 +68,12 @@ public class EnemyController : MonoBehaviour
         }
 
         // Flips the GameObject based on current position and direction of movement
-        if (transform.position.x < currentPos.x && facingRight == true)
+        if (transform.position.x < startPos.x && facingRight == true)
         {
             // If object is moving left but is facing right, flip
             Flip();
         }
-        else if (transform.position.x >= currentPos.x && facingRight == false)
+        else if (transform.position.x >= startPos.x && facingRight == false)
         {
             // If object is moving right but is facing left, flip
             Flip();
@@ -75,7 +83,22 @@ public class EnemyController : MonoBehaviour
     void Moving(Transform target)
     {
         state = MothStates.MOVING;
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        
+        //Vector3 dir = (this.transform.position - target.position).normalized;
+        //rb.AddForce(dir);
+
+        if (Vector2.Distance(transform.position, target.position) <= Vector2.Distance(startPos, target.position)/2)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, theSpeed * Time.deltaTime);
+            speed -= Time.deltaTime;
+        }
+        else
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, theSpeed * Time.deltaTime);
+            speed += Time.deltaTime;
+        }
+        print(speed);
+
         if (Vector2.Distance(transform.position, target.position) <= 0.01f)
         {
             state = MothStates.CHOOSING;
@@ -107,7 +130,7 @@ public class EnemyController : MonoBehaviour
                 // Iterate up to next index
                 nextPoint++;
                 state = MothStates.IDLE;
-                currentPos = transform.position;
+                startPos = transform.position;
             }
             else
             {
@@ -123,7 +146,7 @@ public class EnemyController : MonoBehaviour
                 // Iterate down to next index
                 nextPoint--;
                 state = MothStates.IDLE;
-                currentPos = transform.position;
+                startPos = transform.position;
             }
             else
             {
