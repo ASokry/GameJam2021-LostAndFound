@@ -5,34 +5,28 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] GameObject StartMenu;
-    [SerializeField] GameObject SettingMenu;
-    [SerializeField] GameObject Managers;
+    [Header("Menus")]
+    [SerializeField] protected GameObject StartMenu;
+    [SerializeField] protected GameObject SettingMenu;
 
     [Header("Setting values")]
     [SerializeField] Slider masterVolume;
     [SerializeField] Slider musicVolume;
     [SerializeField] Slider sfxVolume;
 
-    private void Awake()
-    {
-        //assuming this the first class that gets called when the game starts
-        Instantiate(Managers);
-    }
-
-    private void Start()
+    protected virtual void Start()
     {
         InitiateMenus();
         InitiateSettings();
     }
 
-    private void InitiateMenus()
+    protected virtual void InitiateMenus()
     {
         StartMenu.SetActive(true);
         SettingMenu.SetActive(false);
     }    
 
-    private void InitiateSettings()
+    protected virtual void InitiateSettings()
     {
         masterVolume.minValue = -20;
         masterVolume.maxValue = 0;
@@ -68,7 +62,6 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
-
 
 
 }
