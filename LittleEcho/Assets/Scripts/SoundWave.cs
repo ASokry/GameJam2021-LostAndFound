@@ -15,7 +15,6 @@ public class SoundWave : MonoBehaviour
     private float duration = 4;
     private float timeAlive = 0;
 
-    [SerializeField]
     private int iteration;
 
     [SerializeField]
@@ -24,7 +23,7 @@ public class SoundWave : MonoBehaviour
     private AudioClip echoSound;
 
     [SerializeField]
-    private SoundWave wavePrefab;
+    private SoundWave echoPrefab;
 
     [SerializeField]
     public LayerMask checkMask;
@@ -121,7 +120,7 @@ public class SoundWave : MonoBehaviour
 
     void SpawnSoundWave(Vector3 position, float durationIn, int iterationIn)
     {
-        SoundWave wave = Instantiate(wavePrefab, position, Quaternion.identity);
+        SoundWave wave = Instantiate(echoPrefab, position, Quaternion.identity);
         wave.Init(durationIn, iterationIn);
     }
 
@@ -187,5 +186,10 @@ public class SoundWave : MonoBehaviour
     private static float AudioPitchPerIteration(int iterationIn)
     {
         return Mathf.Pow(0.9F, Mathf.Max(0, iterationIn - 1));
+    }
+
+    public int GetNumberOfPoints()
+    {
+        return numberOfPoints;
     }
 }

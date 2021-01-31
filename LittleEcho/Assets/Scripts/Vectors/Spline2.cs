@@ -5,9 +5,9 @@ using UnityEngine;
 using Unity.VectorGraphics;
 
 [ExecuteInEditMode]
-public class Spline : MonoBehaviour
+public class Spline2 : MonoBehaviour
 {
-    public Transform[] controlPoints;
+    public List<Transform> points;
 
     private Scene m_Scene;
     private Shape m_Path;
@@ -62,22 +62,29 @@ public class Spline : MonoBehaviour
             Start();
 
         // Update the control points of the spline.
-        m_Path.Contours[0].Segments[0].P0 = controlPoints[0].localPosition;
-        m_Path.Contours[0].Segments[1].P0 = controlPoints[1].localPosition;
-        m_Path.Contours[0].Segments[2].P0 = controlPoints[2].localPosition;
-        m_Path.Contours[0].Segments[3].P0 = controlPoints[3].localPosition;
+        m_Path.Contours[0].Segments[0].P0 = points[0].localPosition;
+        m_Path.Contours[0].Segments[1].P0 = points[1].localPosition;
+        m_Path.Contours[0].Segments[2].P0 = points[2].localPosition;
+        m_Path.Contours[0].Segments[3].P0 = points[3].localPosition;
 
-        float perSegment = 0.5F * Mathf.PI;
+        float perSegment = 2 * Mathf.PI / points.Count;
 
         float radius = 1.145F;
 
         float angle1 = 0.33F * perSegment;
+        float angle2 = 0.66F * perSegment;
+
+        for (int i = 0; i < points.Count; i++)
+        {
+            
+        }
+
         m_Path.Contours[0].Segments[0].P1 = InterpolatePoints(radius, angle1);
         m_Path.Contours[0].Segments[1].P1 = InterpolatePoints(radius, angle1 + perSegment);
         m_Path.Contours[0].Segments[2].P1 = InterpolatePoints(radius, angle1 + perSegment * 2);
         m_Path.Contours[0].Segments[3].P1 = InterpolatePoints(radius, angle1 + perSegment * 3);
 
-        float angle2 = 0.66F * perSegment;
+
         m_Path.Contours[0].Segments[0].P2 = InterpolatePoints(radius, angle2);
         m_Path.Contours[0].Segments[1].P2 = InterpolatePoints(radius, angle2 + perSegment);
         m_Path.Contours[0].Segments[2].P2 = InterpolatePoints(radius, angle2 + perSegment * 2);
