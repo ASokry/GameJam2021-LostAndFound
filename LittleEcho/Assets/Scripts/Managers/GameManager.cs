@@ -17,7 +17,7 @@ public class GameManager : Singleton<GameManager>
     {
         get { return _currentGameState; }
     }
-    private GameState _currentGameState = GameState.Playing;
+    [SerializeField] private GameState _currentGameState = GameState.Playing;
 
     protected override void Awake()
     {

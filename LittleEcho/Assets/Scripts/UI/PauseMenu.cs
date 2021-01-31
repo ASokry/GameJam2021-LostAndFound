@@ -9,6 +9,7 @@ public class PauseMenu : MainMenu
     {
         base.Start();
         base.StartMenu.SetActive(false);
+        
     }
 
     public void Update()
@@ -29,7 +30,7 @@ public class PauseMenu : MainMenu
     public void ResumeGame()
     {
         base.StartMenu.SetActive(false);
-        GameManager.Instance.ChangeState(GameManager.GameState.Paused);
+        GameManager.Instance.ChangeState(GameManager.GameState.Playing);
         Time.timeScale = 1;
     }
 
