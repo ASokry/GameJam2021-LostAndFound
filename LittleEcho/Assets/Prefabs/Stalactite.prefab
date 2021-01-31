@@ -352,7 +352,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterSource
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5907141778088804570, guid: 8a39858aab4ce484b910d11c55c20f02, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8a39858aab4ce484b910d11c55c20f02, type: 3}
 --- !u!4 &2615825248268957262 stripped
 Transform:

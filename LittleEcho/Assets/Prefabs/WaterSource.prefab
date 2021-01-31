@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5907141778088804571}
   - component: {fileID: 5907141778088804569}
-  - component: {fileID: 5907141778088804570}
   m_Layer: 0
   m_Name: WaterSource
   m_TagString: Untagged
@@ -45,18 +44,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dripFrequency: 2
---- !u!114 &5907141778088804570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5907141778088804572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb88577c5ff69614dbc62e655e76cbac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObjects: []
-  objectToPool: {fileID: 390441630745201047, guid: 166a1756b2a01d041997d0a499b2b0e7, type: 3}
-  amountToPool: 1
