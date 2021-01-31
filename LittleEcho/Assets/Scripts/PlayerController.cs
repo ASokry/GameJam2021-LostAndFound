@@ -37,26 +37,32 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        UpdateInput();
+        if (GameManager.Instance.CurrentGameState != GameManager.GameState.Paused)
+        {
+            UpdateInput();
+        }
     }
 
     private void FixedUpdate()
     {
-        // Check if the GameObject is touching the ground by checking if a small circle is overlapping an Object with Layer "Ground"
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-
-        // Get horizontal move input (x-axis)
-        moveInput = Input.GetAxis("Horizontal");
-        Move();
-
-        // Flips the GameObject based on direction of movement
-        if (facingRight == false && moveInput > 0) // Check if Moving to the right
+        if (GameManager.Instance.CurrentGameState != GameManager.GameState.Paused)
         {
-            Flip();
-        }
-        else if (facingRight == true && moveInput < 0) // Check if Moving to the left
-        {
-            Flip();
+            // Check if the GameObject is touching the ground by checking if a small circle is overlapping an Object with Layer "Ground"
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+
+            // Get horizontal move input (x-axis)
+            moveInput = Input.GetAxis("Horizontal");
+            Move();
+
+            // Flips the GameObject based on direction of movement
+            if (facingRight == false && moveInput > 0) // Check if Moving to the right
+            {
+                Flip();
+            }
+            else if (facingRight == true && moveInput < 0) // Check if Moving to the left
+            {
+                Flip();
+            }
         }
     }
 
