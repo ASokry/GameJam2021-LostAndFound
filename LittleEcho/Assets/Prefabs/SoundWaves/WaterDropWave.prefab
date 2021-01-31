@@ -44,14 +44,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518630de0a1e7f64da2e32f53bbc2296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 2
-  normalSound: {fileID: 8300000, guid: 9eccbf5f2d60f864f82eb7bbb38aeacf, type: 3}
-  echoSound: {fileID: 8300000, guid: b17b508e82d1b184cb1b1b385f4df149, type: 3}
-  wavePrefab: {fileID: 7967318258726834216}
+  duration: 1
   checkMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  source: {fileID: 5188365601558599276}
+  echoPrefab: {fileID: 0}
+  normalSound: {fileID: 8300000, guid: 9eccbf5f2d60f864f82eb7bbb38aeacf, type: 3}
+  echoSound: {fileID: 8300000, guid: b17b508e82d1b184cb1b1b385f4df149, type: 3}
+  thickness: 4
+  normalColor: {r: 0, g: 1, b: 1, a: 1}
+  echoColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!82 &5188365601558599276
 AudioSource:
   m_ObjectHideFlags: 0
