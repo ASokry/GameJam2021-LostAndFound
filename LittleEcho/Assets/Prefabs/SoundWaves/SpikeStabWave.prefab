@@ -53,7 +53,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 83fc79433f447c647a41c918508eda80, type: 3}
   echoSound:
   - {fileID: 8300000, guid: 3465912b02e379a4f8ad4f97b8a9243a, type: 3}
-  thickness: 3
+  thickness: 5
   normalColor: {r: 1, g: 0, b: 0, a: 1}
   echoColor: {r: 0.5566038, g: 0.1718775, b: 0, a: 0.2509804}
 --- !u!82 &5188365601558599276
