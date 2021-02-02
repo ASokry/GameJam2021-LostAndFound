@@ -11,14 +11,14 @@ public class MainMenu : MonoBehaviour
     [SerializeField] protected GameObject SettingMenu;
 
     [Header("Setting values")]
-    [SerializeField] Slider masterVolume;
-    [SerializeField] Slider musicVolume;
-    [SerializeField] Slider sfxVolume;
+    [SerializeField] Slider masterVolume = null;
+    [SerializeField] Slider musicVolume = null;
+    [SerializeField] Slider sfxVolume = null;
 
     [Header("Sound")]
-    [SerializeField] AudioClip clickButtonSound;
-    [SerializeField] AudioClip hoverButtonSound;
-    [SerializeField] AudioClip startMenuSound;
+    [SerializeField] AudioClip clickButtonSound = null;
+    [SerializeField] AudioClip hoverButtonSound = null;
+    //[SerializeField] AudioClip startMenuSound = null;
     private AudioSource audioSource;
 
     private void Awake()

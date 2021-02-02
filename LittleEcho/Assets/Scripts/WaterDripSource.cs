@@ -5,7 +5,7 @@ using UnityEngine;
 public class WaterDripSource : MonoBehaviour
 {
     [SerializeField] float dripFrequency = 2;
-    [SerializeField] ObjectPool waterDropPool;
+    [SerializeField] ObjectPool waterDropPool = null;
     float totalTime;
     float coolDown;
 

@@ -32,7 +32,7 @@ public class EnemyController : MonoBehaviour
     private float moveCountdown;
 
     [SerializeField]
-    private SoundWave flapWave;
+    private SoundWave flapWave = null;
 
     [SerializeField]
     private float flapCooldown = 0.4F;

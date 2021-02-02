@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WaterDrop : MonoBehaviour
 {
-    [SerializeField] GameObject soundWave;
+    [SerializeField] GameObject soundWave = null;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
