@@ -88,13 +88,15 @@ public class SoundWave : MonoBehaviour
 
         // Set up properties tied to duration (the number of sound points)
         this.duration = duration;
-        numberOfPoints = PointsPerDuration(duration);
+        numberOfPoints = PointsPerDuration(duration); // Bigger sound waves need more points
 
         // Set up properties tied to iteration (audio related)
         this.iteration = iteration;
-        source.volume *= AudioVolumePerIteration(iteration);
-        source.pitch *= AudioPitchPerIteration(iteration);
-        // Pick a particular sound variant
+        source.volume *= AudioVolumePerIteration(iteration); // Echos get quieter
+        source.pitch *= AudioPitchPerIteration(iteration); // Echos get pitched lower
+        source.priority = Mathf.Clamp(source.priority + (iteration > 0 ? 48 : 0), 0, 255); // Echos are lower priority
+
+        // Randomly pick a sound variant
         soundVariant = soundVariant == - 1 ? Random.Range(0, normalSound.Length) : soundVariant;
         source.clip = iteration == 0 ? normalSound[soundVariant] : echoSound[soundVariant];
     }
@@ -197,7 +199,7 @@ public class SoundWave : MonoBehaviour
         points.Clear();
         VectorLine.Destroy(ref line);
 
-        if (source.clip && timeAlive > source.clip.length)
+        if (!source.clip || timeAlive > source.clip.length)
             Destroy(gameObject);
     }
 
